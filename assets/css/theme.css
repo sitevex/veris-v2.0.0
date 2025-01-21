@@ -1,0 +1,331 @@
+:root {
+  --orange-primary: #d84315;
+  --blue-primary: #296bef;
+  --white: #ffffff;
+  --dark-blue: #13243f;
+  --gray-blue: #425065;
+  --deep-blue: #19408f;
+  --bright-blue: #0071ce;
+  --light-gray: #d0d3d9;
+  --red: #cc0b39;
+  --pale-blue: #eaf0fd;
+  --darker-blue: #0f1d32;
+  --cello-blue: #1a3556;
+  --lighter-gray: #e7e9ec;
+  --soft-blue: #7fa6f5;
+  --medium-blue: #2156bf;
+}
+
+body {
+  padding-top: 80px;
+  font-family: "Rethink Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  color: var(--dark-blue) !important;
+}
+
+.btn-blue-veris {
+  background-color: var(--blue-primary); /* Color base */
+  color: var(--white); /* Color de la letra */
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-blue-veris:hover {
+  background-color: var(--blue-primary);
+  color: var(--white);
+}
+
+.btn-blue-veris:active {
+  background-color: #1a50db;
+  color: var(--white) !important;
+  transform: scale(0.98);
+}
+
+.btn-blue-veris:disabled {
+  background-color: #daebff;
+  color: #5da8fd;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.btn-close:focus {
+  box-shadow: none;
+}
+
+/* Estilo base para las cards */
+.custom-card {
+  position: relative;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Imagen de fondo */
+.custom-card .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Degradado sobre la imagen */
+.custom-card .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    243.92% 157.93% at 52.93% 2.42%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(84, 137, 242, 0.8) 52.98%,
+    #5489f2 64.25%
+  );
+  z-index: 1;
+}
+
+/* Contenido de la card */
+.custom-card .card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Para separar el texto y el ícono */
+  z-index: 2;
+  color: white;
+}
+
+/* Estilo del texto */
+.custom-card .card-content .content-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo del ícono */
+.custom-card .card-icon {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  color: #fff;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efecto hover sobre la card */
+.custom-card:hover .card-icon {
+  transform: translateX(5px);
+  opacity: 1;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-toggler {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  border: 2px solid var(--blue-primary);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: 2px solid var(--blue-primary);
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón en hover */
+}
+
+.navbar-toggler::before {
+  content: ""; /* Elemento para el círculo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(239, 246, 255);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.navbar-toggler:hover::before {
+  width: 300%; /* Tamaño final del círculo */
+  height: 300%; /* Tamaño final del círculo */
+}
+
+.navbar-toggler .navbar-toggler-bars {
+  position: relative;
+  z-index: 1;
+  color: var(--dark-blue);
+}
+
+.menu-link {
+  color: var(--blue-primary) !important;
+  font-size: 0.813rem;
+  font-weight: 400;
+  padding: 0.75rem 0.25rem !important;
+  line-height: 16px;
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+  color: var(--blue-primary) !important;
+}
+
+.menu-link i {
+  font-size: 1.1rem;
+}
+
+/* Estilo inicial para el ícono chevron */
+.nav-link[data-bs-toggle="dropdown"]::after {
+  content: "\f078"; /* Icono de chevron hacia abajo */
+  font-family: "Font Awesome 5 Free"; /* Usar Font Awesome */
+  font-weight: 900;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease-in-out; /* Animación suave */
+  margin-left: auto;
+  border: none;
+}
+
+/* Rotación del ícono cuando el submenú está abierto */
+.nav-link[data-bs-toggle="dropdown"][aria-expanded="true"]::after {
+  transform: rotate(180deg); /* Gira el ícono */
+}
+
+.login-btn {
+  background-color: var(--blue-primary) !important;
+  border-color: var(--blue-primary) !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: var(--deep-blue) !important;
+  border-color: var(--deep-blue) !important;
+}
+
+.dropdown-menu {
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 0.5rem;
+}
+
+.dropdown-item {
+  font-size: 0.813rem;
+  color: var(--cello-blue);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover {
+  background-color: var(--pale-blue);
+  color: var(--blue-primary);
+}
+.text-blue-primary {
+  color: var(--blue-primary);
+}
+.text-orange-primary {
+  color: var(--orange-primary);
+}
+.text-gray-blue {
+  color: var(--gray-blue);
+}
+/* Tamaños generales */
+.text-xs {
+  font-size: 0.75rem !important;
+}
+
+.text-sm {
+  font-size: 0.875rem !important;
+}
+
+.text-lg {
+  font-size: 1.125rem !important;
+}
+
+.box-shadow-1 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Tamaños para pantallas medianas (md) */
+@media (min-width: 768px) {
+  .text-md-xs {
+    font-size: 0.75rem !important;
+  }
+
+  .text-md-sm {
+    font-size: 0.875rem !important;
+  }
+
+  .text-md-lg {
+    font-size: 1.125rem !important;
+  }
+}
+
+/* Tamaños para pantallas grandes (lg) */
+@media (min-width: 992px) {
+  section {
+    padding: 44px 56px;
+  }
+
+  .text-lg-xs {
+    font-size: 0.75rem !important;
+  }
+
+  .text-lg-sm {
+    font-size: 0.875rem !important;
+  }
+
+  .text-lg-lg {
+    font-size: 1.125rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas {
+    width: 75%; /* Ajusta el ancho del offcanvas */
+    max-width: 300px; /* Define un máximo para pantallas más grandes */
+    transform: translateX(-100%);
+    transition: transform 0.1s ease-in-out;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--white); /* Fondo blanco */
+  }
+
+  .offcanvas.show {
+    transform: translateX(0);
+  }
+
+  /* Animación suave al cerrar */
+  .offcanvas:not(.show) {
+    transform: translateX(-100%);
+    /*  transition: transform 0.3s ease-in-out; */
+  }
+
+  .offcanvas-header {
+    border-bottom: 1px solid var(--light-gray);
+  }
+
+  .offcanvas-body {
+    padding: 1rem 1rem;
+  }
+
+  .dropdown-menu {
+    box-shadow: none;
+  }
+}
