@@ -49,10 +49,55 @@ body {
   cursor: not-allowed;
   opacity: 0.7;
 }
-.btn-close:focus {
+
+/* Estilo base del botón */
+.btn-white-veris {
+  background-color: var(--white);
+  color: var(--blue-primary);
+  border: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.btn-white-veris:hover {
+  background-color: #daebff;
+  color: var(--blue-primary);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto active */
+.btn-white-veris:active {
+  background-color: var(--white) !important;
+  color: #1a50db !important;
+  border: transparent;
+  transform: scale(0.95);
+}
+
+/* Estado disabled */
+.btn-white-veris:disabled {
+  background-color: #f2f2f2;
+  color: #a1a1a1;
+  border-color: #d9d9d9;
+  cursor: not-allowed;
   box-shadow: none;
 }
 
+/* Efecto focus */
+.btn-white-veris:focus {
+  outline: none; /* Sin borde adicional de navegador */
+  box-shadow: 0px 0px 4px 2px rgba(41, 107, 239, 0.5); /* Resaltado */
+}
+
+/* Ajuste adicional para dispositivos táctiles */
+.btn-white-veris:focus-visible {
+  outline: 2px dashed var(--blue-primary); /* Contorno visible solo para teclados */
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+.bg-deep-blue {background: var(--deep-blue);}
+.bg-pale-blue{background: var(--pale-blue);}
 /* Estilo base para las cards */
 .custom-card {
   position: relative;
@@ -126,8 +171,38 @@ body {
   object-fit: cover;
   width: 100%;
   height: 205px;
-  /* border-top-left-radius: 16px */; /* Respeta los bordes redondeados */
+  /* border-top-left-radius: 16px */ /* Respeta los bordes redondeados */
   /* border-top-right-radius: 16px; */
+}
+.ellipse-bg {
+  position: absolute;
+  width: 100%; /* Adaptar al ancho del contenedor */
+  height: 100%; /* Adaptar al alto del contenedor */
+  max-width: 356px; /* Tamaño máximo */
+  max-height: 356px; /* Tamaño máximo */
+  border-radius: 50%; /* Forma circular */
+  background: var(--Primario-Shade-20, #005aa5);
+  filter: blur(45.85px);
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrar el elemento */
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-black {
+  font-weight: 900;
+}
+
+.mbottom-3 {
+  margin-bottom: 0.75rem;
+}
+.mbottom-3-5 {
+  margin-bottom: 0.875rem;
+}
+.mbottom-4 {
+  margin-bottom: 1.25rem;
 }
 
 .navbar {
@@ -253,6 +328,7 @@ body {
 .text-gray-blue {
   color: var(--gray-blue);
 }
+
 /* Tamaños generales */
 .text-xs {
   font-size: 0.75rem !important;
@@ -269,7 +345,10 @@ body {
 .box-shadow-1 {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
-
+.box-shadow-2 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
 /* Tamaños para pantallas medianas (md) */
 @media (min-width: 768px) {
   .text-md-xs {
@@ -283,6 +362,10 @@ body {
   .text-md-lg {
     font-size: 1.125rem !important;
   }
+}
+
+section {
+  padding: 44px 16px;
 }
 
 /* Tamaños para pantallas grandes (lg) */
