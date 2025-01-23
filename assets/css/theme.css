@@ -10,6 +10,7 @@
   --red: #cc0b39;
   --pale-blue: #eaf0fd;
   --darker-blue: #0f1d32;
+  --dark-moke: #1a1818;
   --cello-blue: #1a3556;
   --lighter-gray: #e7e9ec;
   --soft-blue: #7fa6f5;
@@ -23,6 +24,18 @@ body {
   color: var(--dark-blue) !important;
 }
 
+.badge-discount {
+  border-radius: 0px 0px 0px 4px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  background: var(--red);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
 .btn-blue-veris {
   background-color: var(--blue-primary); /* Color base */
   color: var(--white); /* Color de la letra */
@@ -60,9 +73,9 @@ body {
 
 /* Efecto hover */
 .btn-white-veris:hover {
-  background-color: #daebff;
+  background-color: var(--white);
   color: var(--blue-primary);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); */
 }
 
 /* Efecto active */
@@ -84,8 +97,7 @@ body {
 
 /* Efecto focus */
 .btn-white-veris:focus {
-  outline: none; /* Sin borde adicional de navegador */
-  box-shadow: 0px 0px 4px 2px rgba(41, 107, 239, 0.5); /* Resaltado */
+  outline: none;
 }
 
 /* Ajuste adicional para dispositivos táctiles */
@@ -96,6 +108,51 @@ body {
 .btn-close:focus {
   box-shadow: none;
 }
+
+/* Estilo base para el botón */
+.btn-app {
+  background-color: #1a1818;
+  color: #ffffff;
+  border: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Estilo del ícono */
+.btn-app .btn-icon-app {
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: contain;
+}
+
+/* Estados del botón */
+.btn-app:hover {
+  background-color: #292727;
+  color: #e0e0e0;
+}
+
+.btn-app:focus {
+  background-color: #333131;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.btn-app:active {
+  background-color: #0f0f0f !important;
+  color: #cfcfcf !important;
+  transform: scale(0.95);
+}
+
+.btn-app:disabled {
+  background-color: #3d3d3d;
+  color: #7a7a7a;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+
 .btn-apple {
   background-image: url("/assets/img/icono/apple.png");
 }
@@ -141,6 +198,9 @@ body {
 }
 .bg-pale-blue {
   background: var(--pale-blue);
+}
+.bg-moke{
+  background: var(--dark-moke);
 }
 /* Estilo base para las cards */
 .custom-card {
@@ -218,20 +278,21 @@ body {
   /* border-top-left-radius: 16px */ /* Respeta los bordes redondeados */
   /* border-top-right-radius: 16px; */
 }
-.ellipse-bg {
+.with-ellipse::before {
+  content: "";
   position: absolute;
-  width: 100%; /* Adaptar al ancho del contenedor */
-  height: 100%; /* Adaptar al alto del contenedor */
-  max-width: 356px; /* Tamaño máximo */
-  max-height: 356px; /* Tamaño máximo */
-  border-radius: 50%; /* Forma circular */
+  width: 100%;
+  height: 100%;
+  max-width: 356px;
+  max-height: 356px;
+  border-radius: 50%;
   background: var(--Primario-Shade-20, #005aa5);
   filter: blur(45.85px);
-  z-index: 0;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centrar el elemento */
+  transform: translate(-50%, -50%);
 }
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -311,6 +372,12 @@ body {
   color: var(--blue-primary) !important;
 }
 
+.navbar-nav .menu-link:focus {
+  color: var(--blue-primary);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color: var(--blue-primary) !important;
+}
 .menu-link i {
   font-size: 1.1rem;
 }
@@ -448,10 +515,6 @@ body {
   color: var(--soft-blue);
   font-weight: bold;
 }
-/* .footer .app-section{
-  display: flex;
-  flex-shrink: 0;
-} */
 .footer .app-preview {
   height: 100%;
   width: 100%;
@@ -469,6 +532,26 @@ body {
 
 .social-icons a:hover {
   opacity: 0.8;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+.zoom-img {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-img img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  display: block;
+  width: 100%;
+}
+
+.zoom-img:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
 }
 
 /* Tamaños para pantallas medianas (md) */
@@ -540,5 +623,20 @@ section {
 
   .dropdown-menu {
     box-shadow: none;
+  }
+
+  .with-ellipse::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 356px;
+    max-height: 356px;
+    border-radius: 50%;
+    background: none;
+    filter: blur(45.85px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
