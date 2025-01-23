@@ -20,7 +20,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-white fixed-top px-1 px-md-4">
-            <div class="container-fluid">
+            <div class="container px-lg-0">
                 <!-- Logo -->
                 <a class="navbar-brand order-1 order-lg-0 mx-auto mx-lg-0" href="#">
                     <img src="/assets/img/logos/veris.png" alt="Veris Logo" height="40">
@@ -33,7 +33,7 @@
                 </button>
                 <!-- Offcanvas Menu for Mobile/Tablet -->
                 <div class="offcanvas offcanvas-start rounded-0" id="navbarOffcanvas">
-                    <div class="offcanvas-header">
+                    <div class="offcanvas-header py-2">
                         <h5 class="offcanvas-title d-none">Menú</h5>
                         <a class="navbar-brand" href="#">
                             <img src="/assets/img/logos/veris.png" alt="Veris Logo" height="40">
@@ -41,11 +41,10 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav ms-auto gap-lg-2 gap-xxl-3">
+                        <ul class="navbar-nav ms-auto gap-lg-1 gap-xxl-3">
                             <!-- Repeatable Items -->
                             <li class="nav-item">
-                                <a class="nav-link menu-link text-orange-primary" href="#"><i
-                                        class="bi bi-heart-pulse-fill me-1"></i>Veris Urgencias</a>
+                                <a class="nav-link menu-link text-orange-primary" href="#"><i class="fa-solid fa-truck-medical me-1"></i>Veris Urgencias</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#"><i
@@ -85,289 +84,375 @@
                             </li>
                         </ul>
                         <div class="d-flex align-items-center gap-3 ms-lg-3">
-                            <a href="#" class="btn btn-blue-veris login-btn mt-3 mt-lg-0 w-100">Iniciar sesión</a>
+                            <a href="#" class="btn btn-sm btn-blue-veris px-3 py-2 mt-3 mt-lg-0 w-100">Iniciar sesión</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <section>
-        <div class="container-fluid px-0">
-            <div class="row row-cols-2 row-cols-lg-4 g-4">
-                <!-- Agenda citas médicas -->
-                <div class="col-6 col-md-6 col-lg-3">
-                    <a href="#" class="card text-decoration-none rounded-4 h-100 border-0 box-shadow-1 btn-blue-veris">
-                        <div class="card-body">
-                            <div class="d-lg-flex align-items-center justify-content-between gap-3 h-100">
-                                <div class="mb-2 mb-lg-0">
-                                    <h6 class="fw-bold">Agenda citas médicas</h6>
+    <main class="content-wrapper">
+        <section>
+            <div class="container px-lg-0">
+                <div class="row row-cols-2 row-cols-lg-4 g-4">
+                    <!-- Agenda citas médicas -->
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <a href="#"
+                            class="card text-decoration-none rounded-4 h-100 border-0 box-shadow-1 btn-blue-veris">
+                            <div class="card-body">
+                                <div class="d-lg-flex align-items-center justify-content-between gap-3 h-100">
+                                    <div class="mb-2 mb-lg-0">
+                                        <h6 class="fw-bold">Agenda citas médicas</h6>
+                                    </div>
+                                    <i class="bi bi-chevron-right h2"></i>
                                 </div>
-                                <i class="bi bi-chevron-right h2"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Planes Preventivos -->
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <a href="#" class="card text-decoration-none rounded-4 h-100 border-0 box-shadow-1">
+                            <div class="card-body">
+                                <div class="d-lg-flex align-items-center justify-content-between gap-3">
+                                    <div class="mb-2 mb-lg-0">
+                                        <h6 class="fw-bold">Planes Preventivos</h6>
+                                        <p class="text-sm text-gray-blue mb-0">Cuidamos de ti con descuentos exclusivos
+                                        </p>
+                                    </div>
+                                    <i class="bi bi-heart-pulse text-blue-primary h2"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Servicio Videoconsulta -->
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <a href="#" class="card text-decoration-none rounded-4 h-100 border-0 box-shadow-1">
+                            <div class="card-body">
+                                <div class="d-lg-flex align-items-center justify-content-between gap-3">
+                                    <div class="mb-2 mb-lg-0">
+                                        <h6 class="fw-bold">Servicio Videoconsulta</h6>
+                                        <p class="text-sm text-gray-blue mb-0">Desde tu computadora, tablet o celular
+                                        </p>
+                                    </div>
+                                    <i class="bi bi-person-workspace text-blue-primary h2"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Farmacia -->
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <a href="#" class="card text-decoration-none rounded-4 h-100 border-0 box-shadow-1">
+                            <div class="card-body">
+                                <div class="d-lg-flex align-items-center justify-content-between gap-3">
+                                    <div class="mb-2 mb-lg-0">
+                                        <h6 class="fw-bold">Farmacia</h6>
+                                        <p class="text-sm text-gray-blue mb-0">Facilita el acceso a los tratamientos</p>
+                                    </div>
+                                    <i class="bi bi-capsule-pill text-blue-primary h2"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container px-lg-0">
+                <div class="row g-3 g-lg-4">
+                    <div class="col-6 col-md-3 order-1">
+                        <a href="#!">
+                            <div class="custom-card px-3 pb-4">
+                                <img src="/assets/img/cards/1.jpg" alt="Imagen de fondo" class="card-image">
+                                <div class="card-overlay"></div>
+                                <div class="card-content">
+                                    <div class="content-text">
+                                        <h5 class="card-title fw-bold h2">Explora nuestros servicios</h5>
+                                    </div>
+                                    <span class="card-icon">
+                                        <i class="fa-solid fa-chevron-right" style="font-size: 2rem;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 order-3 order-md-2">
+                        <a href="#!">
+                            <div class="custom-card px-3 pb-4">
+                                <img src="/assets/img/cards/2.jpg" alt="Imagen de fondo" class="card-image">
+                                <div class="card-overlay"></div>
+                                <div class="card-content">
+                                    <div class="content-text">
+                                        <h5 class="card-title fw-bold h2">Amplia gama de especialidades</h5>
+                                    </div>
+                                    <span class="card-icon">
+                                        <i class="fa-solid fa-chevron-right" style="font-size: 2rem;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 order-2">
+                        <a href="#!">
+                            <div class="custom-card px-3 pb-4">
+                                <img src="/assets/img/cards/3.jpg" alt="Imagen de fondo" class="card-image">
+                                <div class="card-overlay"></div>
+                                <div class="card-content">
+                                    <div class="content-text">
+                                        <h5 class="card-title fw-bold h2">Todos los planes</h5>
+                                    </div>
+                                    <span class="card-icon">
+                                        <i class="fa-solid fa-chevron-right" style="font-size: 2rem;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-pale-blue">
+            <div class="container px-lg-0">
+                <div class="row mb-4">
+                    <div class="col-12 text-start">
+                        <h5 class="fw-bold">Conoce todas nuestras promociones de este mes</h5>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <!-- Fila 1 -->
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="row g-4">
+                                    <!-- Dos cards pequeñas -->
+                                    <div class="col-12">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <div class="position-relative">
+                                                    <img src="/assets/img/cards/4.jpg" class="card-img"
+                                                        alt="Promoción 1">
+                                                    <span
+                                                        class="badge bg-danger position-absolute top-0 end-0">-20%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <div class="position-relative">
+                                                    <img src="/assets/img/cards/5.jpg" class="card-img"
+                                                        alt="Promoción 2">
+                                                    <span
+                                                        class="badge bg-danger position-absolute top-0 end-0">-20%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card grande vertical -->
+                            <div class="col-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <img src="/assets/img/cards/6.jpg" class="card-img" alt="Promoción Grande">
+                                            <span class="badge bg-danger position-absolute top-0 end-0">-20%</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <!-- Fila 2 -->
+                        <div class="row g-4">
+                            <!-- Cuatro cards pequeñas -->
+                            <div class="col-6 col-lg-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <img src="/assets/img/cards/5.jpg" class="card-img" alt="Promoción 4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <img src="/assets/img/cards/7.jpg" class="card-img" alt="Promoción 5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <img src="/assets/img/cards/8.jpg" class="card-img" alt="Promoción 6">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                        <h5 class="card-title">Ver todas</h5>
+                                        <p class="card-text">¡Aprovecha nuestras promociones y cuida de ti al mejor
+                                            precio!</p>
+                                        <a href="#" class="btn btn-light">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Planes Preventivos -->
-                <div class="col-6 col-md-6 col-lg-3">
-                    <a href="#" class="card text-decoration-none rounded-4 h-100 border-0 box-shadow-1">
-                        <div class="card-body">
-                            <div class="d-lg-flex align-items-center justify-content-between gap-3">
-                                <div class="mb-2 mb-lg-0">
-                                    <h6 class="fw-bold">Planes Preventivos</h6>
-                                    <p class="text-sm text-gray-blue mb-0">Cuidamos de ti con descuentos exclusivos</p>
-                                </div>
-                                <i class="bi bi-heart-pulse text-blue-primary h2"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
 
-                <!-- Servicio Videoconsulta -->
-                <div class="col-6 col-md-6 col-lg-3">
-                    <a href="#" class="card text-decoration-none rounded-4 h-100 border-0 box-shadow-1">
-                        <div class="card-body">
-                            <div class="d-lg-flex align-items-center justify-content-between gap-3">
-                                <div class="mb-2 mb-lg-0">
-                                    <h6 class="fw-bold">Servicio Videoconsulta</h6>
-                                    <p class="text-sm text-gray-blue mb-0">Desde tu computadora, tablet o celular</p>
-                                </div>
-                                <i class="bi bi-person-workspace text-blue-primary h2"></i>
+                <!-- Card de "Ver todas" -->
+                <!-- <div class="row g-4 mt-4">
+                    <div class="col-12">
+                        <div class="card bg-primary text-white text-center">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="card-title">Ver todas</h5>
+                                <p class="card-text">¡Aprovecha nuestras promociones y cuida de ti al mejor precio!</p>
+                                <a href="#" class="btn btn-light">Ver más</a>
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </div> -->
+            </div>
 
-                <!-- Farmacia -->
-                <div class="col-6 col-md-6 col-lg-3">
-                    <a href="#" class="card text-decoration-none rounded-4 h-100 border-0 box-shadow-1">
-                        <div class="card-body">
-                            <div class="d-lg-flex align-items-center justify-content-between gap-3">
-                                <div class="mb-2 mb-lg-0">
-                                    <h6 class="fw-bold">Farmacia</h6>
-                                    <p class="text-sm text-gray-blue mb-0">Facilita el acceso a los tratamientos</p>
-                                </div>
-                                <i class="bi bi-capsule-pill text-blue-primary h2"></i>
+        </section>
+
+        <section class="bg-deep-blue pb-0 py-xl-0">
+            <div class="container px-lg-0">
+                <div class="row row-cols-1 row-cols-md-2 align-items-center g-0">
+                    <div class="col-12 col-md-7">
+                        <h1 class="text-white font-extrabold">Resultados de laboratorio</h1>
+                        <h2 class="text-white font-extrabold mb-3 mb-lg-5">en línea, rápido y fácil</h2>
+                        <a href="#!" class="btn btn-lg btn-white-veris text-lg px-4 py-3">Ver resultados</a>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class=" position-relative overflow-hidden">
+                            <div class="ellipse-bg d-none d-xl-block"></div>
+                            <img src="/assets/img/doctor-1.png" class="img-fluid z-1 position-relative" alt="Doctor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container px-lg-0">
+                <h4 class="text-blue-primary fw-bold mb-4">Consulta horarios y ubicaciones</h4>
+                <div class="row row-cols-1 row-cols-md-3 g-3 g-lg-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 box-shadow-2 rounded-4 h-100">
+                            <img src="/assets/img/branch/1.png" class="img-fluid rounded-top-4 card-img-custom"
+                                alt="Guayaquil">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-semibold mbottom-3">Guayaquil</h5>
+                                <a href="#!" class="btn btn-blue-veris fw-normal text-sm">Conocer centrales</a>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 box-shadow-2 rounded-4 h-100">
+                            <img src="/assets/img/branch/2.png" class="img-fluid rounded-top-4 card-img-custom"
+                                alt="Quito">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-semibold mbottom-3">Quito</h5>
+                                <a href="#!" class="btn btn-blue-veris fw-normal text-sm">Conocer centrales</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 box-shadow-2 rounded-4 h-100">
+                            <img src="/assets/img/branch/3.png" class="img-fluid rounded-top-4 card-img-custom"
+                                alt="Cuenca">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-semibold mbottom-3">Cuenca</h5>
+                                <a href="#!" class="btn btn-blue-veris fw-normal text-sm">Conocer centrales</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Social Media Bar -->
+        <div class="social-bar bg-blue-primary text-center py-4">
+            <div class="container px-lg-0">
+                <h5 class="text-white mb-2">Encuentra nuestras redes sociales</h5>
+                <div class="social-icons d-flex justify-content-center gap-3">
+                    <a class="text-white" href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a class="text-white" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="text-white" href="#"><i class="bi bi-instagram"></i></a>
+                    <a class="text-white" href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a class="text-white" href="#"><i class="bi bi-youtube"></i></a>
                 </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="container-fluid px-0">
+    </main>
+    <footer class="footer pb-0">
+        <div class="container px-lg-0">
             <div class="row g-3 g-lg-4">
-                <div class="col-6 col-md-3 order-1">
-                    <a href="#!">
-                        <div class="custom-card px-3 pb-4">
-                            <img src="/assets/img/cards/1.jpg" alt="Imagen de fondo" class="card-image">
-                            <div class="card-overlay"></div>
-                            <div class="card-content">
-                                <div class="content-text">
-                                    <h5 class="card-title fw-bold h2">Explora nuestros servicios</h5>
-                                </div>
-                                <span class="card-icon">
-                                    <i class="fa-solid fa-chevron-right" style="font-size: 2rem;"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </a>
+                <!-- About Us Section -->
+                <div class="col-md-6 col-lg-3 mb-lg-4">
+                    <h4 class="text-lg mb-2">Sobre nosotros</h4>
+                    <ul class="footer-links">
+                        <li><a class="fw-normal" href="#">Preguntas frecuentes</a></li>
+                        <li><a class="fw-normal" href="#">Deberes y derechos del paciente</a></li>
+                        <li><a class="fw-normal" href="#">Términos y condiciones</a></li>
+                        <li><a class="fw-normal" href="#">Política de seguridad</a></li>
+                        <li><a class="fw-normal" href="#">Trabaja con nosotros</a></li>
+                        <li><a class="fw-normal" href="#">Sala de prensa</a></li>
+                        <li><a class="fw-normal" href="#">Ubicaciones</a></li>
+                    </ul>
+
+                    <h4 class="text-lg mb-2 mt-4">Canales</h4>
+                    <ul class="footer-links">
+                        <li><a class="fw-normal" href="#">Cuéntanos tu experiencia</a></li>
+                        <li><a class="fw-normal" href="#">PBX: 600 9 600</a></li>
+                        <li><a class="fw-normal" href="#">Portal para prestadores</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-6 order-3 order-md-2">
-                    <a href="#!">
-                        <div class="custom-card px-3 pb-4">
-                            <img src="/assets/img/cards/2.jpg" alt="Imagen de fondo" class="card-image">
-                            <div class="card-overlay"></div>
-                            <div class="card-content">
-                                <div class="content-text">
-                                    <h5 class="card-title fw-bold h2">Amplia gama de especialidades</h5>
-                                </div>
-                                <span class="card-icon">
-                                    <i class="fa-solid fa-chevron-right" style="font-size: 2rem;"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </a>
+
+                <!-- Contact Information -->
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-lg mb-2">Matriz Guayaquil</h4>
+                    <div class="contact-info mb-4">
+                        <p>Av. Juan Tanca Marengo y Av. Agustín Freire Ycaza Esq. Edificio Veris</p>
+                        <p>Teléfono: 603 2 000</p>
+                    </div>
+
+                    <h4 class="text-lg mb-2">Oficinas Quito</h4>
+                    <div class="contact-info">
+                        <p class="mb-2">Quito (edificio Seguros Equinoccial) ubicado en la av. Eloy Alfaro N33 - 400 y Fernando
+                            Ayarza</p>
+                        <p class="mb-0">(02) 2220 298</p>
+                        <p class="mb-0">(02) 2220 380</p>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 order-2">
-                    <a href="#!">
-                        <div class="custom-card px-3 pb-4">
-                            <img src="/assets/img/cards/3.jpg" alt="Imagen de fondo" class="card-image">
-                            <div class="card-overlay"></div>
-                            <div class="card-content">
-                                <div class="content-text">
-                                    <h5 class="card-title fw-bold h2">Todos los planes</h5>
-                                </div>
-                                <span class="card-icon">
-                                    <i class="fa-solid fa-chevron-right" style="font-size: 2rem;"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </a>
+
+                <!-- App Section -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-4">Encuentra citas, tratamientos, recetas y tus resultados</h5>
+                    <h2 class="highlight-text mb-4">en un solo lugar.</h2>
+                    <div class="store-buttons d-flex justify-content-center justify-content-lg-between justify-content-xxl-center gap-2">
+                        <a class="btn-market btn-apple" href="#!" role="button">
+                            <span class="btn-market-subtitle">Descargalo en el</span><span class="btn-market-title">App Store</span>
+                        </a>
+                        <a class="btn-market btn-google" href="#!" role="button">
+                            <span class="btn-market-subtitle">Disponible en</span><span class="btn-market-title">Google Play</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Phone img -->
+                <div class="col-md-6 col-lg-3 app-section d-flex flex-shrink-0 justify-content-center">
+                    <img src="/assets/img/phone_veris-1.png" alt="App Preview" class="app-preview">
                 </div>
             </div>
         </div>
-    </section>
-    <section class="bg-pale-blue">
-        <div class="container-fluid px-0">
-            <div class="row mb-4">
-                <div class="col-12 text-start">
-                    <h5 class="fw-bold">Conoce todas nuestras promociones de este mes</h5>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-12 col-md-6">
-                    <!-- Fila 1 -->
-                    <div class="row g-4">
-                        <div class="col-6">
-                            <div class="row g-4">
-                                <!-- Dos cards pequeñas -->
-                                <div class="col-12">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <div class="position-relative">
-                                                <img src="/assets/img/cards/4.jpg" class="card-img" alt="Promoción 1">
-                                                <span class="badge bg-danger position-absolute top-0 end-0">-20%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <div class="position-relative">
-                                                <img src="/assets/img/cards/5.jpg" class="card-img" alt="Promoción 2">
-                                                <span class="badge bg-danger position-absolute top-0 end-0">-20%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card grande vertical -->
-                        <div class="col-6">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <div class="position-relative">
-                                        <img src="/assets/img/cards/6.jpg" class="card-img" alt="Promoción Grande">
-                                        <span class="badge bg-danger position-absolute top-0 end-0">-20%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <!-- Fila 2 -->
-                    <div class="row g-4">
-                        <!-- Cuatro cards pequeñas -->
-                        <div class="col-6 col-lg-6">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <img src="/assets/img/cards/5.jpg" class="card-img" alt="Promoción 4">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-6">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <img src="/assets/img/cards/7.jpg" class="card-img" alt="Promoción 5">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-6">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <img src="/assets/img/cards/8.jpg" class="card-img" alt="Promoción 6">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-6">
-                            <div class="card h-100">
-                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                    <h5 class="card-title">Ver todas</h5>
-                                    <p class="card-text">¡Aprovecha nuestras promociones y cuida de ti al mejor precio!</p>
-                                    <a href="#" class="btn btn-light">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Card de "Ver todas" -->
-            <!-- <div class="row g-4 mt-4">
-                <div class="col-12">
-                    <div class="card bg-primary text-white text-center">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title">Ver todas</h5>
-                            <p class="card-text">¡Aprovecha nuestras promociones y cuida de ti al mejor precio!</p>
-                            <a href="#" class="btn btn-light">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-
-    </section>
-
-    <section class="bg-deep-blue pb-0 py-xl-0">
-        <div class="container-fluid px-0">
-            <div class="row row-cols-1 row-cols-md-2 align-items-center g-0">
-                <div class="col-12 col-md-7">
-                    <h1 class="text-white font-extrabold">Resultados de laboratorio</h1>
-                    <h2 class="text-white font-extrabold mb-3 mb-lg-5">en línea, rápido y fácil</h2>
-                    <a href="#!" class="btn btn-lg btn-white-veris text-lg px-4 py-3">Ver resultados</a>
-                </div>
-                <div class="col-12 col-md-5">
-                    <div class=" position-relative overflow-hidden">
-                        <div class="ellipse-bg d-none d-xl-block"></div>
-                        <img src="/assets/img/doctor-1.png" class="img-fluid z-1 position-relative" alt="Doctor">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container-fluid px-0">
-            <h4 class="text-blue-primary fw-bold mb-4">Consulta horarios y ubicaciones</h4>
-            <div class="row row-cols-1 row-cols-md-3 g-3 g-lg-5">
-                <div class="col-12 col-md-4">
-                    <div class="card border-0 box-shadow-2 rounded-4 h-100">
-                        <img src="/assets/img/branch/1.png" class="img-fluid rounded-top-4 card-img-custom"
-                            alt="Guayaquil">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-semibold mbottom-3">Guayaquil</h5>
-                            <a href="#!" class="btn btn-blue-veris fw-normal text-sm">Conocer centrales</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="card border-0 box-shadow-2 rounded-4 h-100">
-                        <img src="/assets/img/branch/2.png" class="img-fluid rounded-top-4 card-img-custom" alt="Quito">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-semibold mbottom-3">Quito</h5>
-                            <a href="#!" class="btn btn-blue-veris fw-normal text-sm">Conocer centrales</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="card border-0 box-shadow-2 rounded-4 h-100">
-                        <img src="/assets/img/branch/3.png" class="img-fluid rounded-top-4 card-img-custom"
-                            alt="Cuenca">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-semibold mbottom-3">Cuenca</h5>
-                            <a href="#!" class="btn btn-blue-veris fw-normal text-sm">Conocer centrales</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>

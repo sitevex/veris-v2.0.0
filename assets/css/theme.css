@@ -29,7 +29,7 @@ body {
   border: none;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  transition: all 0.3s ease;
 }
 
 .btn-blue-veris:hover {
@@ -38,7 +38,7 @@ body {
 }
 
 .btn-blue-veris:active {
-  background-color: #1a50db;
+  background-color: #1a50db !important;
   color: var(--white) !important;
   transform: scale(0.98);
 }
@@ -96,8 +96,52 @@ body {
 .btn-close:focus {
   box-shadow: none;
 }
-.bg-deep-blue {background: var(--deep-blue);}
-.bg-pale-blue{background: var(--pale-blue);}
+.btn-apple {
+  background-image: url("/assets/img/icono/apple.png");
+}
+.btn-google {
+  background-image: url("/assets/img/icono/google-play.png");
+}
+.btn-market {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  padding-left: 2.8125rem;
+  /* transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out,
+    border-color 0.25s ease-in-out, box-shadow 0.2s ease-in-out; */
+  transition: all 0.3s ease;
+  border-radius: 0.4375rem;
+  background-position: center left 0.75rem;
+  background-color: #1a1818;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+.btn-market:hover {
+  background-color: #1a1818;
+}
+.btn-market:active {
+  transform: scale(0.95);
+}
+.btn-market .btn-market-subtitle {
+  display: block;
+  margin-bottom: -0.125rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.565rem;
+}
+.btn-market .btn-market-title {
+  display: block;
+  color: var(--white);
+  font-size: 0.75rem;
+}
+.bg-blue-primary {
+  background: var(--blue-primary);
+}
+.bg-deep-blue {
+  background: var(--deep-blue);
+}
+.bg-pale-blue {
+  background: var(--pale-blue);
+}
 /* Estilo base para las cards */
 .custom-card {
   position: relative;
@@ -252,7 +296,7 @@ body {
 }
 
 .menu-link {
-  color: var(--blue-primary) !important;
+  color: var(--blue-primary);
   font-size: 0.813rem;
   font-weight: 400;
   padding: 0.75rem 0.25rem !important;
@@ -287,19 +331,19 @@ body {
   transform: rotate(180deg); /* Gira el ícono */
 }
 
-.login-btn {
+/* .login-btn {
   background-color: var(--blue-primary) !important;
   border-color: var(--blue-primary) !important;
   padding: 0.5rem 1.5rem !important;
   border-radius: 6px;
   font-weight: 500;
   transition: background-color 0.3s ease;
-}
+} */
 
-.login-btn:hover {
+/* .login-btn:hover {
   background-color: var(--deep-blue) !important;
   border-color: var(--deep-blue) !important;
-}
+} */
 
 .dropdown-menu {
   border-radius: 8px;
@@ -349,6 +393,84 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
+
+.footer {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 2rem 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  position: relative;
+}
+
+.footer-links a:hover,
+.footer .contact-info:hover {
+  opacity: 0.8;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Línea justo debajo del texto */
+  left: 0;
+  width: 0; /* Inicialmente la línea no es visible */
+  height: 1px; /* Grosor de la línea */
+  background-color: var(--white); /* Color de la línea */
+  transition: width 0.3s ease; /* Transición suave */
+}
+
+.footer-links a:hover::after,
+.footer-links a:active::after {
+  width: 100%; /* La línea se dibuja completamente */
+}
+
+.footer .contact-info {
+  font-size: 0.9rem;
+}
+
+.footer .highlight-text {
+  color: var(--soft-blue);
+  font-weight: bold;
+}
+/* .footer .app-section{
+  display: flex;
+  flex-shrink: 0;
+} */
+.footer .app-preview {
+  height: 100%;
+  width: 100%;
+}
+.footer .app-preview {
+  height: auto;
+  max-width: 300px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
 /* Tamaños para pantallas medianas (md) */
 @media (min-width: 768px) {
   .text-md-xs {
