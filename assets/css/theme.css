@@ -36,6 +36,13 @@ body {
   font-weight: 600;
   line-height: 20px;
 }
+.box-shadow-1 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.box-shadow-2 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
 .btn-blue-veris {
   background-color: var(--blue-primary); /* Color base */
   color: var(--white); /* Color de la letra */
@@ -152,7 +159,6 @@ body {
   opacity: 0.65;
 }
 
-
 .btn-apple {
   background-image: url("/assets/img/icono/apple.png");
 }
@@ -199,9 +205,10 @@ body {
 .bg-pale-blue {
   background: var(--pale-blue);
 }
-.bg-moke{
+.bg-moke {
   background: var(--dark-moke);
 }
+
 /* Estilo base para las cards */
 .custom-card {
   position: relative;
@@ -375,7 +382,8 @@ body {
 .navbar-nav .menu-link:focus {
   color: var(--blue-primary);
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: var(--blue-primary) !important;
 }
 .menu-link i {
@@ -452,13 +460,57 @@ body {
 .text-lg {
   font-size: 1.125rem !important;
 }
-
-.box-shadow-1 {
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+.swiper {
+  width: 100%;
+  height: 100%;
 }
-.box-shadow-2 {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
 .footer {
