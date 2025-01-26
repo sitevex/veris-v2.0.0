@@ -13,7 +13,8 @@
 
 /* Custom Properties */
 :root {
-  --orange-primary: #d84315;
+  --orange-primary-600: #d84315;
+  --orange-primary-700: #ba3214;
   --blue-primary: #296bef;
   --white: #ffffff;
   --dark-blue: #13243f;
@@ -43,10 +44,10 @@ body {
   width: 100%; /* Ajusta automáticamente al contenedor padre */
   max-width: 28.32rem; /* Tamaño máximo */
   height: auto;
-  aspect-ratio: 4 / 3; /* Mantén una proporción específica */
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
@@ -430,7 +431,9 @@ body {
 .menu-link:hover {
   color: var(--blue-primary) !important;
 }
-
+.menu-link.text-orange-primary:hover{
+  color: var(--orange-primary-700) !important;
+}
 .navbar-nav .menu-link:focus {
   color: var(--blue-primary);
 }
@@ -484,7 +487,7 @@ body {
   color: var(--dark-blue);
 }
 .text-orange-primary {
-  color: var(--orange-primary);
+  color: var(--orange-primary-600);
 }
 .text-gray-blue {
   color: var(--gray-blue);
@@ -518,6 +521,17 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.slider-home .swiper-slide {
+  transform: scale(0.95);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-home .swiper-slide.swiper-slide-active {
+  transform: scale(1);
+}
+
+
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--blue-primary);
