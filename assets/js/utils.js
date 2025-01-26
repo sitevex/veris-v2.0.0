@@ -29,15 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             config.autoplay = autoplayConfig;
         }
         
-        // Agregar navegación si está habilitada
-        /* if (hasNavigation) {
-            config.navigation = {
-                nextEl: slider.closest('.position-relative').querySelector('.swiper-button-next'),
-                prevEl: slider.closest('.position-relative').querySelector('.swiper-button-prev'),
-            };
-        } */
-
-            // Configuración especial para el slider home
+        // Configuración especial para el slider home
         if (isHomeSlider) {
             Object.assign(config, {
                 centeredSlides: true,
