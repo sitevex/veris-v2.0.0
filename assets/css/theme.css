@@ -1,3 +1,17 @@
+@charset "UTF-8";
+/* 
+ * VERIS - Template | Bootstrap Centro Médicos Template
+ * Copyright 2025 Company Akold
+ * Theme Style
+ */
+/*! 
+  * Bootstrap v5.2.0 ()
+  * Copyright 2011-2021 The Bootstrap Authors
+  * Copyrgiht 2011-2021 Twitter, Inc.
+  * Licensed under MIT()
+  */
+
+/* Custom Properties */
 :root {
   --orange-primary: #d84315;
   --blue-primary: #296bef;
@@ -282,8 +296,6 @@ body {
   object-fit: cover;
   width: 100%;
   height: 205px;
-  /* border-top-left-radius: 16px */ /* Respeta los bordes redondeados */
-  /* border-top-right-radius: 16px; */
 }
 .with-ellipse::before {
   content: "";
@@ -306,7 +318,15 @@ body {
 .font-black {
   font-weight: 900;
 }
-
+.ms-n3 {
+  margin-left: -1rem;
+}
+.me-n3 {
+  margin-right: -1rem;
+}
+.mt-n5 {
+  margin-top: -3rem;
+}
 .mbottom-3 {
   margin-bottom: 0.75rem;
 }
@@ -336,11 +356,11 @@ body {
 }
 
 .navbar-toggler:hover {
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón en hover */
+  transform: scale(1.05);
 }
 
 .navbar-toggler::before {
-  content: ""; /* Elemento para el círculo */
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -353,8 +373,8 @@ body {
 }
 
 .navbar-toggler:hover::before {
-  width: 300%; /* Tamaño final del círculo */
-  height: 300%; /* Tamaño final del círculo */
+  width: 300%;
+  height: 300%;
 }
 
 .navbar-toggler .navbar-toggler-bars {
@@ -392,33 +412,19 @@ body {
 
 /* Estilo inicial para el ícono chevron */
 .nav-link[data-bs-toggle="dropdown"]::after {
-  content: "\f078"; /* Icono de chevron hacia abajo */
-  font-family: "Font Awesome 5 Free"; /* Usar Font Awesome */
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-left: 0.5rem;
-  transition: transform 0.3s ease-in-out; /* Animación suave */
+  transition: transform 0.3s ease-in-out;
   margin-left: auto;
   border: none;
 }
 
 /* Rotación del ícono cuando el submenú está abierto */
 .nav-link[data-bs-toggle="dropdown"][aria-expanded="true"]::after {
-  transform: rotate(180deg); /* Gira el ícono */
+  transform: rotate(180deg);
 }
-
-/* .login-btn {
-  background-color: var(--blue-primary) !important;
-  border-color: var(--blue-primary) !important;
-  padding: 0.5rem 1.5rem !important;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-} */
-
-/* .login-btn:hover {
-  background-color: var(--deep-blue) !important;
-  border-color: var(--deep-blue) !important;
-} */
 
 .dropdown-menu {
   border-radius: 8px;
@@ -438,8 +444,12 @@ body {
   background-color: var(--pale-blue);
   color: var(--blue-primary);
 }
+
 .text-blue-primary {
   color: var(--blue-primary);
+}
+.text-dark-blue {
+  color: var(--dark-blue);
 }
 .text-orange-primary {
   color: var(--orange-primary);
@@ -460,43 +470,28 @@ body {
 .text-lg {
   font-size: 1.125rem !important;
 }
+
+.m-height-200 {
+  max-height: 200px;
+}
 .swiper {
   width: 100%;
   height: 100%;
 }
-
-.service-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  height: 100%;
-  position: relative;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-
-.service-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
 .swiper-button-next,
 .swiper-button-prev {
-  color: white;
-  background: rgba(255, 255, 255, 0.2);
+  color: var(--blue-primary);
+  background: rgba(255, 255, 255, 1);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   transition: background 0.3s ease;
+  font-weight: 900;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .swiper-button-next::after,
@@ -505,11 +500,12 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background: white;
-  opacity: 0.5;
+  background: var(--light-gray);
+  opacity: 0.9;
 }
 
 .swiper-pagination-bullet-active {
+  background: var(--blue-primary);
   opacity: 1;
 }
 
