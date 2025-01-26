@@ -20,9 +20,11 @@
   --gray-blue: #425065;
   --deep-blue: #19408f;
   --bright-blue: #0071ce;
+  --bright-blue-1: #38a5f7;
   --light-gray: #d0d3d9;
   --red: #cc0b39;
   --pale-blue: #eaf0fd;
+  --very-blue: #eaf1ff;
   --darker-blue: #0f1d32;
   --dark-moke: #1a1818;
   --cello-blue: #1a3556;
@@ -37,6 +39,22 @@ body {
     "Helvetica Neue", Arial, sans-serif;
   color: var(--dark-blue) !important;
 }
+.banner-img {
+  width: 100%; /* Ajusta automáticamente al contenedor padre */
+  max-width: 28.32rem; /* Tamaño máximo */
+  height: auto;
+  aspect-ratio: 4 / 3; /* Mantén una proporción específica */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .badge-discount {
   border-radius: 0px 0px 0px 4px;
@@ -58,8 +76,8 @@ body {
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .btn-blue-veris {
-  background-color: var(--blue-primary); /* Color base */
-  color: var(--white); /* Color de la letra */
+  background-color: var(--blue-primary);
+  color: var(--white);
   border: none;
   font-weight: bold;
   cursor: pointer;
@@ -222,7 +240,21 @@ body {
 .bg-moke {
   background: var(--dark-moke);
 }
-
+.bg-blue-gradient {
+  background: linear-gradient(94deg, #296bef 2.62%, #62b7fd 98.91%);
+}
+.bg-very-blue-gradient {
+  background: linear-gradient(92deg, #eaf1ff 1.4%, #e3ecff 99.48%);
+}
+.bg-blue-bright {
+  background: linear-gradient(94deg, #38a5f7 2.62%, #62b7fd 98.91%);
+}
+.bg-green-dark {
+  background: linear-gradient(94deg, #77ab08 2.62%, #a1d13b 98.91%);
+}
+.border-blue {
+  border: 1px solid var(--Royal-Blue-100, #296bef);
+}
 /* Estilo base para las cards */
 .custom-card {
   position: relative;
@@ -457,7 +489,15 @@ body {
 .text-gray-blue {
   color: var(--gray-blue);
 }
-
+.text-deep-blue {
+  color: var(--deep-blue);
+}
+.text-blue-primary-gradient {
+  background: linear-gradient(286deg, #5489f2 2.7%, #296bef 92.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* Tamaños generales */
 .text-xs {
   font-size: 0.75rem !important;
@@ -513,8 +553,6 @@ body {
   background: var(--soft-blue);
   opacity: 1;
 }
-
-
 
 .footer {
   background-color: var(--dark-blue);
@@ -645,6 +683,9 @@ section {
   .text-lg-lg {
     font-size: 1.125rem !important;
   }
+  .top-lg-60{
+    top: 60%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -693,5 +734,8 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .banner-img {
+    aspect-ratio: 1 / 1;
   }
 }
