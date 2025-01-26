@@ -509,6 +509,13 @@ body {
   opacity: 1;
 }
 
+.slider-insurers .swiper-pagination-bullet-active {
+  background: var(--soft-blue);
+  opacity: 1;
+}
+
+
+
 .footer {
   background-color: var(--dark-blue);
   color: var(--white);
