@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector(".navbar"); // Selecciona el menú
+    const scrollThreshold = 50; // Distancia de scroll para activar el efecto
     const sliders = document.querySelectorAll('.swiper');
 
     sliders.forEach((slider) => {
@@ -56,5 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Inicializar Swiper
         new Swiper(slider, config);
+    });
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > scrollThreshold) {
+        navbar.classList.add("scrolled"); // Agrega la clase cuando el scroll supera el umbral
+      } else {
+        navbar.classList.remove("scrolled"); // Elimina la clase cuando el scroll regresa arriba
+      }
     });
 });
