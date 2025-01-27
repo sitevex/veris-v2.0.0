@@ -149,6 +149,40 @@ body {
   outline: 2px dashed var(--vris-blue-primary); /* Contorno visible solo para teclados */
 }
 
+.btn-outline-blue-veris {
+  color: var(--vris-blue-primary);
+  border: 1px solid var(--vris-blue-primary);
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-blue-veris:hover {
+  color: var(--vris-white);
+  background-color: var(--vris-blue-primary);
+  border-color: var(--vris-blue-primary);
+}
+
+.btn-outline-blue-veris:active {
+  color: var(--vris-white) !important;
+  background-color: #1d4dc0 !important;
+  border-color: #1d4dc0 !important;
+  box-shadow: none;
+  transform: scale(0.95);
+}
+
+.btn-outline-blue-veris:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-outline-blue-veris:disabled {
+  color: #ccc;
+  background-color: transparent;
+  border-color: #ccc;
+  cursor: not-allowed; /* Cursor deshabilitado */
+}
+
+
 .btn-close:focus {
   box-shadow: none;
 }
