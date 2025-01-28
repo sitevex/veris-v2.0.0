@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veris - centro medico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- theme veris.css -->
+    <link rel="stylesheet" href="/assets/css/theme-veris.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg px-1 px-md-4">
+            <div class="container-lg px-lg-0">
+                <!-- Logo -->
+                <a class="navbar-brand order-1 order-lg-0 mx-auto mx-lg-0" href="/index.html">
+                    <img src="/assets/img/logos/veris.png" alt="Veris Logo" height="40">
+                </a>
+                <!-- Toggler for Mobile/Tablet -->
+                <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                    <span class="bi bi-list navbar-toggler-bars" style="font-size: 1.85rem;"></span>
+                </button>
+                <!-- Offcanvas Menu for Mobile/Tablet -->
+                <div class="offcanvas offcanvas-start rounded-0" id="navbarOffcanvas">
+                    <div class="offcanvas-header py-2">
+                        <h5 class="offcanvas-title d-none">Menú</h5>
+                        <a class="navbar-brand" href="/index.html">
+                            <img src="/assets/img/logos/veris.png" alt="Veris Logo" height="40">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto gap-lg-1 gap-xxl-3">
+                            <!-- Repeatable Items -->
+                            <li class="nav-item">
+                                <a class="nav-link menu-link text-orange-primary" href="#!"><i class="fa-solid fa-truck-medical me-1"></i>Veris Urgencias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#!"><i class="bi bi-tag-fill me-1"></i>Promociones</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i class="fa-solid fa-hand-holding-medical me-1"></i>Servicios</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#!">Servicio 1</a></li>
+                                    <li><a class="dropdown-item" href="#!">Servicio 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i class="fa-solid fa-stethoscope me-1"></i>Especialidades</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#!">Especialidad 1</a></li>
+                                    <li><a class="dropdown-item" href="#!">Especialidad 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="/pages/ubicaciones.html"><i class="fa-solid fa-location-dot me-1"></i>Ubicaciones</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i class="fa-solid fa-users me-1"></i> Nosotros</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/pages/nosotros.html">¿Quiénes somos?</a></li>
+                                    <li><a class="dropdown-item" href="#!">Ubicaciones</a></li>
+                                    <li><a class="dropdown-item" href="#!">Artículos de lectura</a></li>
+                                    <li><a class="dropdown-item" href="#!">Canal ético</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#!"><i class="fa-solid fa-file-lines me-1"></i>Facturación</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center gap-3 ms-lg-3">
+                            <a href="#!" class="btn btn-sm btn-blue-veris px-3 py-2 mt-3 mt-lg-0 w-100">Iniciar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="content-wrapper">
+        <!-- banner -->
+        <section class="position-relative">
+            <div class="bg-liner-gradient-n90-700"></div>
+            <img src="/assets/img/banner/banner-2.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rtl-flip" alt="Background image">
+            <div class="container position-relative z-2 py-4 py-md-5 my-lg-3 my-xl-4 my-xxl-5">
+                <div class="row pt-lg-2 pb-2 pb-sm-3 pb-lg-4">
+                    <div class="col-9 col-md-8 col-lg-12">
+                        <h1 class="fw-bold display-1 mb-lg-4 text-white text-center"></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Breadcrumb -->
+        <nav class="container py-3 mt-3" aria-label="breadcrumb">
+            <ol class="breadcrumb text-sm mb-0">
+                <li class="breadcrumb-item"><a class="text-decoration-none" href="#!">Inicio</a></li>
+                <li class="breadcrumb-item"><a class="text-decoration-none" href="#!">Ubicaciones</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Veris Alborada</li>
+            </ol>
+        </nav>
+        <!-- Central -->
+        <section class="pt-3">
+            <div class="container-lg">
+                <div class="text-start border-5 border-blue-start mb-4">
+                    <h2 class="text-blue-primary fw-bold ms-4">Veris Alborada</h2>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12">
+                        
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 h-100">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Consulta</h5> -->
+                                <h6 class="card-subtitle mb-2 text-blue-primary">Consulta</h6>
+                                <div class="card-text text-xs">
+                                    <p>Lunes a viernes de 07h00 hasta 21h00 Sábado de 07h00 a 20h00 Domingo de 08h00 hasta 16h00</p>
+                                </div>
+                                <a href="#!" class="card-link text-blue-primary text-xs">Agendar cita</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 h-100">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Laboratorio</h5> -->
+                                <h6 class="card-subtitle mb-2 text-blue-primary">Laboratorio</h6>
+                                <div class="card-text text-xs">
+                                    <p>Lunes a Viernes de 06h00 hasta 15h30 Sábado de 07h00 hasta 15h30 Domingo de 08h00 hasta 13h00</p>
+                                </div>
+                                <a href="#!" class="card-link text-blue-primary text-xs">Solicita toma de muestra a domicilio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 h-100">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Farmacia</h5> -->
+                                <h6 class="card-subtitle mb-2 text-blue-primary">Farmacia</h6>
+                                <div class="card-text text-xs">
+                                    <p>Lunes a viernes de 07h00 hasta 21h00 Sábado de 07h00 a 20h00 Domingo de 08h00 hasta 16h00</p>
+                                </div>
+                                <a href="#!" class="card-link text-blue-primary text-xs">Solicita las medicinas a tu domicilio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 h-100">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Óptica</h5> -->
+                                <h6 class="card-subtitle mb-2 text-blue-primary">Óptica</h6>
+                                <div class="card-text text-xs">
+                                    <p>Lunes a Domingos de 08h00 hasta 20h00</p>
+                                </div>
+                                <a href="#!" class="card-link text-blue-primary text-xs">Agendar cita</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 h-100">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Odontología</h5> -->
+                                <h6 class="card-subtitle mb-2 text-blue-primary">Odontología</h6>
+                                <div class="card-text text-xs">
+                                    <p>Cerrado temporalmente</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 h-100">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Imágenes</h5> -->
+                                <h6 class="card-subtitle mb-2 text-blue-primary">Imágenes</h6>
+                                <div class="card-text text-xs">
+                                    <p>
+                                        Ecografías
+                                        Lunes a Viernes de 07h00 A 11h30 - 12h00 a 14h00 - 17H00 A 20H00 Sábado 08h00 a 12h00
+                                    </p>
+                                    <p>
+                                        Rayos X
+                                        Lunes a viernes de 08h00 a 21h00 Sábado de 08h00 a 14h00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 h-100">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Procedimientos</h5> -->
+                                <h6 class="card-subtitle mb-2 text-blue-primary">Procedimientos</h6>
+                                <div class="card-text text-xs">
+                                    <p>Vitamina C, Papanicolau, EKG, Lavado de oídos y procedimientos de enfermería.</p>
+                                    <p>Lunes a Viernes de 7h00 hasta 21h00Sábado de 7h00 hasta 20h00Domingo de 8h00 hasta 15h00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- map -->
+                    <div class="col-12 mt-5">
+                        <div class="content-map text-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.035306378667!2d-79.898202!3d-2.140149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d6d5c40e96d%3A0x7a0a1d4a867ab774!2sVeris%20Alborada!5e0!3m2!1ses-419!2sec!4v1738089749395!5m2!1ses-419!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Laboratorio -->
+        <section class="bg-pale-blue">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12 text-start">
+                        <h2 class="text-blue-primary fw-bold">Más ubicaciones</h2>
+                    </div>
+                    <div class="col-12">
+                        <ul class="nav nav-underline nav-locations mb-4" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold px-3 py-2 active" id="pills-city-1-tab" data-bs-toggle="pill" data-bs-target="#pills-city-1" type="button" role="tab" aria-controls="pills-city-1" aria-selected="true">Guayaquil</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold px-3 py-2" id="pills-city-2-tab" data-bs-toggle="pill" data-bs-target="#pills-city-2" type="button" role="tab" aria-controls="pills-city-2" aria-selected="false">Quito</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold px-3 py-2" id="pills-city-3-tab" data-bs-toggle="pill" data-bs-target="#pills-city-3" type="button" role="tab" aria-controls="pills-city-3" aria-selected="false">Cuenca</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-city-1" role="tabpanel" aria-labelledby="pills-city-1-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="slider-medical-centers position-relative">
+                                        <div class="swiper my-swiper pt-3 pb-5" data-slides-per-view="1" data-autoplay='{"delay": 2500,"disableOnInteraction": false}' data-has-navigation="true" data-breakpoints='{"360": { "slidesPerView": 1.2 },"640": { "slidesPerView": 2 },"1024": { "slidesPerView": 3 },"1280": { "slidesPerView": 4 }}'>
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="card h-100 border-0 box-shadow-2 rounded-4 p-3">
+                                                        <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
+                                                            <img src="/assets/img/laboratory/laboratory-1.png" class="card-img-top rounded-3 object-fit-cover" alt="...">
+                                                        </a>
+                                                        <div class="card-body pb-0">
+                                                            <h5 class="card-title mb-0"><a href="#!" class="text-dark-blue text-decoration-none">Laboratorio Central</a></h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card h-100 border-0 box-shadow-2 rounded-4 p-3">
+                                                        <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
+                                                            <img src="/assets/img/laboratory/laboratory-2.png" class="card-img-top rounded-3 object-fit-cover" alt="...">
+                                                        </a>
+                                                        <div class="card-body pb-0">
+                                                            <h5 class="card-title mb-0"><a href="#!" class="text-dark-blue text-decoration-none">Entre Ríos</a></h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card h-100 border-0 box-shadow-2 rounded-4 p-3">
+                                                        <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
+                                                            <img src="/assets/img/laboratory/laboratory-3.png" class="card-img-top rounded-3 object-fit-cover" alt="...">
+                                                        </a>
+                                                        <div class="card-body pb-0">
+                                                            <h5 class="card-title mb-0"><a href="#!" class="text-dark-blue text-decoration-none">Blue Coast</a></h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card h-100 border-0 box-shadow-2 rounded-4 p-3">
+                                                        <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
+                                                            <img src="/assets/img/laboratory/laboratory-4.png" class="card-img-top rounded-3 object-fit-cover" alt="...">
+                                                        </a>
+                                                        <div class="card-body pb-0">
+                                                            <h5 class="card-title mb-0"><a href="#!" class="text-dark-blue text-decoration-none">Samanes</a></h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card h-100 border-0 box-shadow-2 rounded-4 p-3">
+                                                        <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
+                                                            <img src="/assets/img/laboratory/laboratory-2.png" class="card-img-top rounded-3 object-fit-cover" alt="...">
+                                                        </a>
+                                                        <div class="card-body pb-0">
+                                                            <h5 class="card-title mb-0"><a href="#!" class="text-dark-blue text-decoration-none">Entre Ríos</a></h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next mt-n5 me-n3"></div>
+                                        <div class="swiper-button-prev mt-n5 ms-n3"></div>
+                                        <!-- Pagination -->
+                                        <div class="swiper-pagination position-absolute bottom-0"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-city-2" role="tabpanel" aria-labelledby="pills-city-2-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="slider-medical-centers position-relative"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-city-3" role="tabpanel" aria-labelledby="pills-city-3-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="slider-medical-centers position-relative"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- App veris -->
+        <section>
+            <div class="container-lg py-4">
+                <div class="row justify-content-between align-items-center g-3 g-lg-4">
+                    <div class="col-12 col-lg-6">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-body">
+                                <img src="/assets/img/phone_1.png" class="img-fluid" alt="app veris">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="mb-4">
+                            <h1 class="text-blue-primary font-extrabold display-6 mb-0">Descarga </h1>
+                            <h1 class="text-blue-primary font-extrabold display-6 mb-4">El app Mi Veris</h1>
+                        </div>
+                        <h4 class="text-blue-primary fw-semibold mb-4">Tus citas, tratamientos, resultados y más, en un solo lugar</h4>
+                        <div class="row flex-column g-0 gap-2">
+                            <div class="col-6 col-md-3 col-lg-5 col-xl-4">
+                                <a href="#!" class="btn btn-lg btn-app py-3 bg-moke px-2 text-white d-flex align-items-center gap-2 w-100">
+                                    <img src="/assets/img/icono/apple.png" class="btn-icon-app me-1" alt="app veris">
+                                    <div class="text-start">
+                                        <p class="text-xs fw-normal lh-1 mb-0 w-100">Descargalo en el</p>
+                                        <p class="h6 fw-semibold lh-1 mb-0 w-100">App Store</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-5 col-xl-4">
+                                <a href="#!" class="btn btn-lg btn-app py-3 bg-moke px-2 text-white d-flex align-items-center gap-2 w-100">
+                                    <img src="/assets/img/icono/google-play.png" class="btn-icon-app me-1" alt="app veris">
+                                    <div class="text-start">
+                                        <p class="text-xs fw-normal lh-1 mb-0 w-100">Disponible en</p>
+                                        <p class="h6 fw-semibold lh-1 mb-0 w-100">Google Play</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Social Media Bar -->
+        <div class="social-bar bg-blue-primary text-center py-4">
+            <div class="container-lg px-lg-0">
+                <h5 class="font-gotham text-white mb-2">Encuentra nuestras redes sociales</h5>
+                <div class="social-icons d-flex justify-content-center gap-3">
+                    <a class="text-white" href="#!"><i class="bi bi-whatsapp"></i></a>
+                    <a class="text-white" href="#!"><i class="bi bi-facebook"></i></a>
+                    <a class="text-white" href="#!"><i class="bi bi-instagram"></i></a>
+                    <a class="text-white" href="#!"><i class="bi bi-twitter-x"></i></a>
+                    <a class="text-white" href="#!"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer pb-0">
+        <div class="container-lg px-lg-0">
+            <div class="row g-3 g-lg-4">
+                <!-- About Us Section -->
+                <div class="col-md-6 col-lg-3 mb-lg-4">
+                    <h4 class="text-lg mb-2">Sobre nosotros</h4>
+                    <ul class="footer-links">
+                        <li><a class="fw-normal" href="#!">Preguntas frecuentes</a></li>
+                        <li><a class="fw-normal" href="#!">Deberes y derechos del paciente</a></li>
+                        <li><a class="fw-normal" href="#!">Términos y condiciones</a></li>
+                        <li><a class="fw-normal" href="#!">Política de seguridad</a></li>
+                        <li><a class="fw-normal" href="#!">Trabaja con nosotros</a></li>
+                        <li><a class="fw-normal" href="#!">Sala de prensa</a></li>
+                        <li><a class="fw-normal" href="#!">Ubicaciones</a></li>
+                    </ul>
+
+                    <h4 class="text-lg mb-2 mt-4">Canales</h4>
+                    <ul class="footer-links">
+                        <li><a class="fw-normal" href="#!">Cuéntanos tu experiencia</a></li>
+                        <li><a class="fw-normal" href="#!">PBX: 600 9 600</a></li>
+                        <li><a class="fw-normal" href="#!">Portal para prestadores</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-lg mb-2">Matriz Guayaquil</h4>
+                    <div class="contact-info mb-4">
+                        <p>Av. Juan Tanca Marengo y Av. Agustín Freire Ycaza Esq. Edificio Veris</p>
+                        <p>Teléfono: 603 2 000</p>
+                    </div>
+
+                    <h4 class="text-lg mb-2">Oficinas Quito</h4>
+                    <div class="contact-info">
+                        <p class="mb-2">Quito (edificio Seguros Equinoccial) ubicado en la av. Eloy Alfaro N33 - 400 y
+                            Fernando
+                            Ayarza</p>
+                        <p class="mb-0">(02) 2220 298</p>
+                        <p class="mb-0">(02) 2220 380</p>
+                    </div>
+                </div>
+
+                <!-- App Section -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-4">Encuentra citas, tratamientos, recetas y tus resultados</h5>
+                    <h2 class="highlight-text mb-4">en un solo lugar.</h2>
+                    <div
+                        class="store-buttons d-flex justify-content-center justify-content-lg-between justify-content-xxl-center gap-2">
+                        <a class="btn-market btn-apple" href="#!" role="button">
+                            <span class="btn-market-subtitle">Descargalo en el</span><span class="btn-market-title">App
+                                Store</span>
+                        </a>
+                        <a class="btn-market btn-google" href="#!" role="button">
+                            <span class="btn-market-subtitle">Disponible en</span><span class="btn-market-title">Google
+                                Play</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Phone img -->
+                <div class="col-md-6 col-lg-3 app-section d-flex flex-shrink-0 justify-content-center">
+                    <img src="/assets/img/phone_veris-1.png" alt="App Preview" class="app-preview">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/theme-veris.js"></script>
+</body>
+
+</html>
