@@ -5,7 +5,7 @@
  * Theme Style
  */
 /*! 
-  * Bootstrap v5.2.0 ()
+  * Bootstrap v5.3.x ()
   * Copyright 2011-2021 The Bootstrap Authors
   * Copyrgiht 2011-2021 Twitter, Inc.
   * Licensed under MIT()
@@ -42,13 +42,17 @@ body {
     "Helvetica Neue", Arial, sans-serif;
   color: var(--vris-dark-blue) !important;
 }
+
 .content-wrapper {
-  margin-top: 70px; /* Altura del menú */
+  margin-top: 70px;
+  /* Altura del menú */
 }
 
 .banner-img {
-  width: 100%; /* Ajusta automáticamente al contenedor padre */
-  max-width: 28.32rem; /* Tamaño máximo */
+  width: 100%;
+  /* Ajusta automáticamente al contenedor padre */
+  max-width: 28.32rem;
+  /* Tamaño máximo */
   height: auto;
   aspect-ratio: 4 / 3;
   overflow: hidden;
@@ -74,16 +78,20 @@ body {
   font-weight: 600;
   line-height: 20px;
 }
+
 .box-shadow-1 {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
+
 .box-shadow-2 {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
-.box-shadow-3{
+
+.box-shadow-3 {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
+
 .btn-blue-veris {
   background-color: var(--vris-blue-primary);
   color: var(--vris-white);
@@ -150,7 +158,8 @@ body {
 
 /* Ajuste adicional para dispositivos táctiles */
 .btn-white-veris:focus-visible {
-  outline: 2px dashed var(--vris-blue-primary); /* Contorno visible solo para teclados */
+  outline: 2px dashed var(--vris-blue-primary);
+  /* Contorno visible solo para teclados */
 }
 
 .btn-outline-blue-veris {
@@ -183,9 +192,20 @@ body {
   color: #ccc;
   background-color: transparent;
   border-color: #ccc;
-  cursor: not-allowed; /* Cursor deshabilitado */
+  cursor: not-allowed;
+  /* Cursor deshabilitado */
 }
 
+.btn-specialty {
+  transition: all 0.3s ease;
+  /* box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.05); */
+}
+
+.btn-specialty:hover {
+  border-color: #296bef;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(41, 107, 239, 0.1);
+}
 
 .btn-close:focus {
   box-shadow: none;
@@ -237,9 +257,11 @@ body {
 .btn-apple {
   background-image: url("/assets/img/icono/apple.png");
 }
+
 .btn-google {
   background-image: url("/assets/img/icono/google-play.png");
 }
+
 .btn-market {
   display: inline-block;
   padding: 0.375rem 0.875rem;
@@ -254,50 +276,64 @@ body {
   background-repeat: no-repeat;
   text-decoration: none;
 }
+
 .btn-market:hover {
   background-color: #1a1818;
 }
+
 .btn-market:active {
   transform: scale(0.95);
 }
+
 .btn-market .btn-market-subtitle {
   display: block;
   margin-bottom: -0.125rem;
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.565rem;
 }
+
 .btn-market .btn-market-title {
   display: block;
   color: var(--vris-white);
   font-size: 0.75rem;
 }
+
 .bg-blue-primary {
   background: var(--vris-blue-primary);
 }
+
 .bg-deep-blue {
   background: var(--vris-deep-blue);
 }
+
 .bg-pale-blue {
   background: var(--vris-pale-blue);
 }
+
 .bg-moke {
   background: var(--vris-dark-moke);
 }
-.bg-flower-Blue{
+
+.bg-flower-Blue {
   background: var(--vris-flower-Blue);
 }
+
 .bg-blue-gradient {
   background: linear-gradient(94deg, #296bef 2.62%, #62b7fd 98.91%);
 }
+
 .bg-very-blue-gradient {
   background: linear-gradient(92deg, #eaf1ff 1.4%, #e3ecff 99.48%);
 }
+
 .bg-blue-bright {
   background: linear-gradient(94deg, #38a5f7 2.62%, #62b7fd 98.91%);
 }
+
 .bg-green-dark {
   background: linear-gradient(94deg, #77ab08 2.62%, #a1d13b 98.91%);
 }
+
 .bg-liner-gradient-n90-700 {
   position: absolute;
   top: 0;
@@ -325,21 +361,26 @@ body {
   transition: all 0.3s ease;
 }
 
-.logo-content img{
+.logo-content img {
   object-fit: contain;
 }
 
 /* Estilo inicial: filtro gris */
 .logo-content img {
-  filter: grayscale(100%); /* Aplica el filtro gris */
-  transform: scale(1); /* Escala inicial */
-  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out; /* Transiciones suaves */
+  filter: grayscale(100%);
+  /* Aplica el filtro gris */
+  transform: scale(1);
+  /* Escala inicial */
+  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+  /* Transiciones suaves */
 }
 
 /* Estilo en hover: color original */
 .logo-content img:hover {
-  filter: grayscale(0%); /* Quita el filtro gris */
-  transform: scale(1.1); /* Zoom suave */
+  filter: grayscale(0%);
+  /* Quita el filtro gris */
+  transform: scale(1.1);
+  /* Zoom suave */
 }
 
 
@@ -364,7 +405,8 @@ body {
 }
 
 .custom-card:hover .card-image {
-  transform: scale(1.1); /* Zoom */
+  transform: scale(1.1);
+  /* Zoom */
 }
 
 /* Degradado sobre la imagen */
@@ -374,12 +416,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    243.92% 157.93% at 52.93% 2.42%,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(84, 137, 242, 0.8) 52.98%,
-    #5489f2 64.25%
-  );
+  background: radial-gradient(243.92% 157.93% at 52.93% 2.42%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(84, 137, 242, 0.8) 52.98%,
+      #5489f2 64.25%);
   z-index: 1;
 }
 
@@ -451,47 +491,76 @@ body {
 .font-gotham {
   font-family: var(--font-gotham);
 }
+
 .font-extrabold {
   font-weight: 800;
 }
+
 .font-black {
   font-weight: 900;
 }
+
+.icon-specialty {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #f8f9fa; */
+  /* border-radius: 8px; */
+  margin-right: 1rem;
+}
+
+.icon-specialty img {
+  width: 44px;
+  height: 44px;
+}
+
 .ms-n2 {
   margin-left: -0.5rem;
 }
+
 .me-n2 {
   margin-right: -0.5rem;
 }
+
 .mt-n5 {
   margin-top: -3rem;
 }
+
 .mbottom-3 {
   margin-bottom: 0.75rem;
 }
+
 .mbottom-3-5 {
   margin-bottom: 0.875rem;
 }
+
 .mbottom-4 {
   margin-bottom: 1.25rem;
 }
 
 /* Estilo inicial del menú */
 .navbar {
-  position: fixed; /* Fijo en la parte superior */
+  position: fixed;
+  /* Fijo en la parte superior */
   top: 0;
   width: 100%;
-  background-color: var(--vris-white); /* Fondo inicial */
+  background-color: var(--vris-white);
+  /* Fondo inicial */
   z-index: 1000;
-  transition: all 0.3s ease; /* Transición suave */
-  box-shadow: none; /* Sin sombra al inicio */
+  transition: all 0.3s ease;
+  /* Transición suave */
+  box-shadow: none;
+  /* Sin sombra al inicio */
 }
 
 /* Estilo al deslizar (clase activa) */
 .navbar.scrolled {
   background-color: rgba(255, 255, 255, 0.98);
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
-  transform: translateY(0); /* Asegura que esté visible */
+  transform: translateY(0);
+  /* Asegura que esté visible */
 }
 
 
@@ -549,7 +618,7 @@ body {
 
 .menu-link {
   color: var(--vris-blue-primary);
-  font-size: 0.813rem;
+  font-size: 0.7813rem;
   font-weight: 400;
   padding: 0.75rem 0.25rem !important;
   line-height: 16px;
@@ -562,18 +631,22 @@ body {
 .menu-link:hover {
   color: var(--vris-blue-primary) !important;
 }
+
 .menu-link.text-orange-primary:hover {
   color: var(--vris-orange-primary-700) !important;
 }
+
 .navbar-nav .menu-link:focus {
   color: var(--vris-blue-primary);
 }
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   color: var(--vris-blue-primary) !important;
 }
+
 .menu-link i {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* Estilo inicial para el ícono chevron */
@@ -592,13 +665,16 @@ body {
   transform: rotate(180deg);
 }
 
-.nav-locations .nav-link{
+.nav-locations .nav-link {
   color: var(--vris-gray-blue);
 }
-.nav-underline .nav-link.active, .nav-underline .show>.nav-link{
+
+.nav-underline .nav-link.active,
+.nav-underline .show>.nav-link {
   color: var(--vris-blue-primary);
   border-bottom-color: var(--vris-blue-primary);
 }
+
 .dropdown-menu {
   border-radius: 8px;
   border: none;
@@ -621,24 +697,30 @@ body {
 .text-blue-primary {
   color: var(--vris-blue-primary);
 }
+
 .text-dark-blue {
   color: var(--vris-dark-blue);
 }
+
 .text-orange-primary {
   color: var(--vris-orange-primary-600);
 }
+
 .text-gray-blue {
   color: var(--vris-gray-blue);
 }
+
 .text-deep-blue {
   color: var(--vris-deep-blue);
 }
+
 .text-blue-primary-gradient {
   background: linear-gradient(286deg, #5489f2 2.7%, #296bef 92.67%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 /* Tamaños generales */
 .text-xs {
   font-size: 0.75rem !important;
@@ -655,6 +737,7 @@ body {
 .m-height-200 {
   max-height: 200px;
 }
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -774,10 +857,12 @@ body {
   color: var(--vris-soft-blue);
   font-weight: bold;
 }
+
 .footer .app-preview {
   height: 100%;
   width: 100%;
 }
+
 .footer .app-preview {
   height: auto;
   max-width: 300px;
@@ -796,6 +881,7 @@ body {
 .w-fit-content {
   width: fit-content;
 }
+
 .zoom-img {
   display: block;
   overflow: hidden;
@@ -834,12 +920,14 @@ body {
 
 /* Tamaños para pantallas grandes (lg) */
 @media (min-width: 992px) {
+
   /* section {
     padding: 44px 56px;
   } */
   .ms-lg-n3 {
     margin-left: -1rem;
   }
+
   .me-lg-n3 {
     margin-right: -1rem;
   }
@@ -855,20 +943,24 @@ body {
   .text-lg-lg {
     font-size: 1.125rem !important;
   }
+
   .top-lg-60 {
     top: 60%;
   }
 
-  .row-cols-lg-8 > * {
-    flex: 0 0 calc(100% / 8); /* Calcula el ancho de las columnas */
+  .row-cols-lg-8>* {
+    flex: 0 0 calc(100% / 8);
+    /* Calcula el ancho de las columnas */
     max-width: calc(100% / 8);
   }
 }
 
 @media (max-width: 991.98px) {
   .offcanvas {
-    width: 75%; /* Ajusta el ancho del offcanvas */
-    max-width: 300px; /* Define un máximo para pantallas más grandes */
+    width: 75%;
+    /* Ajusta el ancho del offcanvas */
+    max-width: 300px;
+    /* Define un máximo para pantallas más grandes */
     transform: translateX(-100%);
     transition: transform 0.1s ease-in-out;
     border-top-right-radius: 8px;
@@ -912,6 +1004,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   .banner-img {
     aspect-ratio: 1 / 1;
   }
@@ -946,8 +1039,7 @@ body {
   src: url("../fonts/GothamRndSSm-LightItalic.eot");
   src: local("Gotham Rounded SSm Light Italic"),
     local("GothamRndSSm-LightItalic"),
-    url("../fonts/GothamRndSSm-LightItalic.eot?#iefix")
-      format("embedded-opentype"),
+    url("../fonts/GothamRndSSm-LightItalic.eot?#iefix") format("embedded-opentype"),
     url("../fonts/GothamRndSSm-LightItalic.woff2") format("woff2"),
     url("../fonts/GothamRndSSm-LightItalic.woff") format("woff"),
     url("../fonts/GothamRndSSm-LightItalic.ttf") format("truetype");
@@ -983,8 +1075,7 @@ body {
   font-family: "Gotham Rounded SSm";
   src: url("../fonts/GothamRndSSm-BoldItalic.eot");
   src: local("Gotham Rounded SSm Bold Italic"), local("GothamRndSSm-BoldItalic"),
-    url("../fonts/GothamRndSSm-BoldItalic.eot?#iefix")
-      format("embedded-opentype"),
+    url("../fonts/GothamRndSSm-BoldItalic.eot?#iefix") format("embedded-opentype"),
     url("../fonts/GothamRndSSm-BoldItalic.woff2") format("woff2"),
     url("../fonts/GothamRndSSm-BoldItalic.woff") format("woff"),
     url("../fonts/GothamRndSSm-BoldItalic.ttf") format("truetype");
@@ -1068,8 +1159,7 @@ body {
   font-family: "Gotham Rounded SSm";
   src: url("../fonts/GothamRndSSm-BookItalic.eot");
   src: local("Gotham Rounded SSm Book Italic"), local("GothamRndSSm-BookItalic"),
-    url("../fonts/GothamRndSSm-BookItalic.eot?#iefix")
-      format("embedded-opentype"),
+    url("../fonts/GothamRndSSm-BookItalic.eot?#iefix") format("embedded-opentype"),
     url("../fonts/GothamRndSSm-BookItalic.woff2") format("woff2"),
     url("../fonts/GothamRndSSm-BookItalic.woff") format("woff"),
     url("../fonts/GothamRndSSm-BookItalic.ttf") format("truetype");
@@ -1093,8 +1183,7 @@ body {
   font-family: "Gotham Rounded";
   src: url("../fonts/GothamRnd-MediumItalic.eot");
   src: local("Gotham Rounded Medium Italic"), local("GothamRnd-MediumItalic"),
-    url("../fonts/GothamRnd-MediumItalic.eot?#iefix")
-      format("embedded-opentype"),
+    url("../fonts/GothamRnd-MediumItalic.eot?#iefix") format("embedded-opentype"),
     url("../fonts/GothamRnd-MediumItalic.woff2") format("woff2"),
     url("../fonts/GothamRnd-MediumItalic.woff") format("woff"),
     url("../fonts/GothamRnd-MediumItalic.ttf") format("truetype");
@@ -1107,8 +1196,7 @@ body {
   src: url("../fonts/GothamRndSSm-MediumItalic.eot");
   src: local("Gotham Rounded SSm Medium Italic"),
     local("GothamRndSSm-MediumItalic"),
-    url("../fonts/GothamRndSSm-MediumItalic.eot?#iefix")
-      format("embedded-opentype"),
+    url("../fonts/GothamRndSSm-MediumItalic.eot?#iefix") format("embedded-opentype"),
     url("../fonts/GothamRndSSm-MediumItalic.woff2") format("woff2"),
     url("../fonts/GothamRndSSm-MediumItalic.woff") format("woff"),
     url("../fonts/GothamRndSSm-MediumItalic.ttf") format("truetype");
