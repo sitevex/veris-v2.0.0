@@ -457,11 +457,11 @@ body {
 .font-black {
   font-weight: 900;
 }
-.ms-n3 {
-  margin-left: -1rem;
+.ms-n2 {
+  margin-left: -0.5rem;
 }
-.me-n3 {
-  margin-right: -1rem;
+.me-n2 {
+  margin-right: -0.5rem;
 }
 .mt-n5 {
   margin-top: -3rem;
@@ -723,7 +723,7 @@ body {
 .footer {
   background-color: var(--vris-dark-blue);
   color: var(--vris-white);
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 .footer-links {
@@ -828,14 +828,20 @@ body {
   }
 }
 
-section {
+/* section {
   padding: 44px 16px;
-}
+} */
 
 /* Tamaños para pantallas grandes (lg) */
 @media (min-width: 992px) {
-  section {
+  /* section {
     padding: 44px 56px;
+  } */
+  .ms-lg-n3 {
+    margin-left: -1rem;
+  }
+  .me-lg-n3 {
+    margin-right: -1rem;
   }
 
   .text-lg-xs {
