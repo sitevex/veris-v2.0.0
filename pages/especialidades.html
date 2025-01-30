@@ -97,63 +97,295 @@
                 <li class="breadcrumb-item active" aria-current="page">Especialidades</li>
             </ol>
         </nav>
+        
         <!-- Especialidades -->
-        <section class="py-4">
-            <div class="container">
+        <section class="pt-4 pb-5">
+            <div class="container mb-4">
                 <div class="text-start border-5 border-blue-start mb-4">
                     <h2 class="text-blue-primary fw-bold ms-4">Especialidades</h2>
                 </div>
+                <!-- search -->
+                <div class="mb-4">
+                    <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <div class="search-box">
+                            <div class="position-relative">
+                                <input class="form-control search-input search" name="search" id="search" type="search" placeholder="Buscar especialidades" aria-label="Search" />
+                                <span class="fas fa-search search-box-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
                 <!-- botones list groups -->
-                <div class="row gy-3 gx-4">
+                <div class="row gy-3 gx-4" id="content-specialty">
                     <div class="col-12 col-md-6 col-lg-3">
                         <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
                             <div class="icon-specialty">
-                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="Alergología icon">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
                             </div>
-                            <span class="font-gotham fw-medium name-specialty">Alergología</span>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Alergología</span>
                             <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
                         <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
                             <div class="icon-specialty">
-                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="Alergología icon">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
                             </div>
-                            <span class="font-gotham fw-medium name-specialty">Alergología</span>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Cardiología</span>
                             <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
                         <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
                             <div class="icon-specialty">
-                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="Alergología icon">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
                             </div>
-                            <span class="font-gotham fw-medium name-specialty">Alergología</span>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Cirugía general</span>
                             <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
                         <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
                             <div class="icon-specialty">
-                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="Alergología icon">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
                             </div>
-                            <span class="font-gotham fw-medium name-specialty">Alergología</span>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Cirugía maxilo-facial</span>
                             <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
                         <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
                             <div class="icon-specialty">
-                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="Alergología icon">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
                             </div>
-                            <span class="font-gotham fw-medium name-specialty">Alergología</span>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Cirugía oncológica</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Cirugía vascular</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Dermatología</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Endocrinología</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Fisiatría</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Gastroenterología</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Geriatría</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Ginecología</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Medicina general</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Medicina interna</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Nefrología</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Neurología</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Nutrición y dietética</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Oftalmología</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Optometría</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Otorrinolaringología</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Pediatría</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Psicología clínica</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Psiquiatría</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Reumatolología</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Terapia física</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Urología</span>
+                            <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="btn btn-specialty d-flex align-items-center box-shadow-2 rounded-3 p-3" href="#!">
+                            <div class="icon-specialty">
+                                <img src="/assets/img/specialty/img-1.png" class="img-fluid" alt="nombre especialidad">
+                            </div>
+                            <span class="font-gotham fw-medium text-xs name-specialty">Traumatología</span>
                             <i class="fa-solid fa-chevron-right fs-5 text-blue-primary ms-auto"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        
+        <!-- Agenda tu cita -->
+         <section class="bg-blue-gradient-2 pt-5">
+            <div class="container mt-2">
+                <div class="row">
+                    <div class="col-12 col-md-9 mb-4">
+                        <h1 class="text-white font-gotham fw-semibold display-5 mb-1">Agenda tus citas</h1>
+                        <h2 class="text-pattens-blue font-gotham fw-semibold display-6 mb-4">más fácil y rápido desde nuestro portal o la app Mi Veris</h2>
+                        <a href="#!" class="btn btn-white-veris px-3"><i class="fa-solid fa-user me-2"></i>Iniciar sesión</a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="position-relative overflow-hidden">
+                            <img src="/assets/img/phone_veris-3.png" class="img-fluid z-1 position-relative" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
         <!-- Social Media Bar -->
         <div class="social-bar bg-blue-primary text-center py-4">
             <div class="container">
