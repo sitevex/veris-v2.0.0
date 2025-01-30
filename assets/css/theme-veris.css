@@ -466,14 +466,14 @@ body {
 }
 
 .dots-left,
-.dots-right {
+.dots-right,
+.dots-blue-left,
+.dots-blue-right {
   position: absolute;
   width: 150px;
   height: 50%;
-  /* top: 0; */
   background-repeat: no-repeat;
   background-size: contain;
-  /* opacity: 0.5; */
 }
 
 .dots-left {
@@ -487,6 +487,20 @@ body {
   bottom: 10%;
   right: 0;
   background-image: url("/assets/img/circles-2.png");
+  background-position: right center;
+}
+
+.dots-blue-left {
+  bottom: 0;
+  left: 0;
+  background-image: url("/assets/img/circles-blue-left.png");
+  background-position: left center;
+}
+
+.dots-blue-right {
+  top: 0;
+  right: 0;
+  background-image: url("/assets/img/circles-blue-right.png");
   background-position: right center;
 }
 
