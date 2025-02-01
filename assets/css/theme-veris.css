@@ -1050,6 +1050,9 @@ body {
   .banner-img {
     aspect-ratio: 1 / 1;
   }
+  .card-map{
+    min-height: 343px;
+  }
 }
 
 @font-face {
