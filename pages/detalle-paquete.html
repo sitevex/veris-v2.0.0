@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veris - detalle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- theme veris.css -->
+    <link rel="stylesheet" href="/assets/css/theme-veris.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand order-1 order-lg-0 mx-auto mx-lg-0" href="/index.html">
+                    <img src="/assets/img/logos/veris.png" alt="Veris Logo" height="40">
+                </a>
+                <!-- Toggler for Mobile/Tablet -->
+                <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas">
+                    <span class="bi bi-list navbar-toggler-bars" style="font-size: 1.85rem;"></span>
+                </button>
+                <!-- Offcanvas Menu for Mobile/Tablet -->
+                <div class="offcanvas offcanvas-start rounded-0" id="navbarOffcanvas">
+                    <div class="offcanvas-header py-2">
+                        <h5 class="offcanvas-title d-none">Menú</h5>
+                        <a class="navbar-brand" href="/index.html">
+                            <img src="/assets/img/logos/veris.png" alt="Veris Logo" height="40">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto gap-lg-1 gap-xxl-3">
+                            <!-- Repeatable Items -->
+                            <li class="nav-item">
+                                <a class="nav-link menu-link text-orange-primary" href="#!"><i
+                                        class="fa-solid fa-truck-medical me-1"></i>Veris Urgencias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="/pages/promociones.html"><i
+                                        class="bi bi-tag-fill me-1"></i>Promociones</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i
+                                        class="fa-solid fa-hand-holding-medical me-1"></i>Servicios</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#!">Servicio 1</a></li>
+                                    <li><a class="dropdown-item" href="#!">Servicio 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i
+                                        class="fa-solid fa-stethoscope me-1"></i>Especialidades</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#!">Especialidad 1</a></li>
+                                    <li><a class="dropdown-item" href="#!">Especialidad 2</a></li>
+                                    <li><a class="dropdown-item" href="#!">Especialidad 3</a></li>
+                                    <li><a class="dropdown-item" href="/pages/especialidades.html">Ver todas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="/pages/ubicaciones.html"><i
+                                        class="fa-solid fa-location-dot me-1"></i>Ubicaciones</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i
+                                        class="fa-solid fa-users me-1"></i> Nosotros</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/pages/nosotros.html">¿Quiénes somos?</a></li>
+                                    <li><a class="dropdown-item" href="#!">Ubicaciones</a></li>
+                                    <li><a class="dropdown-item" href="#!">Artículos de lectura</a></li>
+                                    <li><a class="dropdown-item" href="#!">Canal ético</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#!"><i
+                                        class="fa-solid fa-file-lines me-1"></i>Facturación</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center gap-3 ms-lg-3">
+                            <a href="#!" class="btn btn-sm btn-blue-veris px-3 py-2 mt-3 mt-lg-0 w-100">Iniciar
+                                sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="content-wrapper">
+        <section class="pb-5">
+            <!-- Breadcrumb -->
+            <nav class="container py-4" aria-label="breadcrumb">
+                <ol class="breadcrumb text-sm mb-0">
+                    <li class="breadcrumb-item"><a class="text-decoration-none" href="#!">Inicio</a></li>
+                    <li class="breadcrumb-item"><a class="text-decoration-none" href="#!">Promociones</a></li>
+                    <li class="breadcrumb-item"><a class="text-decoration-none" href="#!">Paquetes promocionales</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Semáforo plus - 2993</li>
+                </ol>
+            </nav>
+            <div class="container">
+                <div class="text-start border-5 border-blue-start mb-4">
+                    <h2 class="text-blue-primary fw-bold ms-4">Semáforo plus - 2993</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-7">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+                                <img src="/assets/img/medical-packs/img-1.png" class="img-fluid rounded-3 w-100" alt="nombre especialidad" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-body py-0">
+                                <div class="mb-3">
+                                    <div class="discounted-price">
+                                        <p class="text-sm lh-sm mb-0">Antes <del>$80.50</del></p>
+                                    </div>
+                                    <div class="original-price">
+                                        <p class="card-text text-blue-primary fs-2 fw-bold lh-sm mb-0">$64.38</p>
+                                    </div>
+                                </div>
+                                <span class="badge text-bg-pale-blue rounded-4 fw-normal px-2 py-1 mb-4">Adolescentes</span>
+                                <div class="card card-body bg-solitude border-0 rounded-3 mb-4">
+                                    <h6 class="text-blue-primary fw-bold">Consulta</h6>
+                                    <ul class="ps-3 mb-0 text-sm">
+                                        <li class="lh-sm mb-2">1 /Medicina general</li>
+                                    </ul>
+                                    <h6 class="text-blue-primary fw-bold">Laboratorio</h6>
+                                    <ul class="ps-3 mb-0 text-sm">
+                                        <li class="lh-sm mb-2">Glucosa en ayunas</li>
+                                        <li class="lh-sm mb-2">1 Colesterol</li>
+                                        <li class="lh-sm mb-2">1 Creatinina</li>
+                                    </ul>
+                                </div>
+                                <a href="#!" class="btn btn-lg btn-blue-veris font-gotham fw-normal px-3 py-2 w-100">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-pale-blue py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <div class="text-content text-sm">
+                                    <p class="mb-0">
+                                        Quédate en casa que nosotros vamos por tus muestras, este plan es uno de los más completos a través del cual podrás conocer de nuestros servicios de toma de muestra a domicilio y videoconsulta. Con este plan podrás saber que enfermedades digestivas, urinarias y/o gastrointestinales pueden estar aquejándote.
+                                    </p>
+                                    <p class="mb-0">MUY IMPORTANTE:</p>
+                                    <p class="mb-0">1.- Recuerde que al momento de realizar la compra del plan, deberá primero ingresar los datos del beneficiario del producto.</p>
+                                    <p class="mb-0">2.- Luego de ingresar los datos del paciente, deberá ingresar los datos de pago y de la factura.</p>
+                                    <p class="mb-0">3.- Una vez finalizada la compra, deberá llamar al 6009600 y un ejecutivo de contact center, se encargará de realizar el respectivo agendamiento en base a su plan.</p>
+                                    <p class="mb-0">En Veris queremos hacerte la vida más fácil, llámanos al 6009600 o solicita a través de nuestros medios digitales (página web o app) nuestro servicio de Laboratorio a Domicilio, también, puedes adquirir tus medicinas a través de nuestra Farmacia a Domicilio.</p>
+                                    <p class="fw-bold mb-0">¡HACEMOS FÁCIL CUIDARTE!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Social Media Bar -->
+        <div class="social-bar bg-blue-primary text-center py-4">
+            <div class="container">
+                <h5 class="font-gotham text-white mb-2">Encuentra nuestras redes sociales</h5>
+                <div class="social-icons d-flex justify-content-center gap-3">
+                    <a class="text-white" href="#!"><i class="bi bi-whatsapp"></i></a>
+                    <a class="text-white" href="#!"><i class="bi bi-facebook"></i></a>
+                    <a class="text-white" href="#!"><i class="bi bi-instagram"></i></a>
+                    <a class="text-white" href="#!"><i class="bi bi-twitter-x"></i></a>
+                    <a class="text-white" href="#!"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer pt-4 pb-0">
+        <div class="container mt-4">
+            <div class="row g-3">
+                <!-- About Us Section -->
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-lg mb-2">Sobre nosotros</h4>
+                    <ul class="footer-links">
+                        <li><a class="fw-normal" href="#!">Preguntas frecuentes</a></li>
+                        <li><a class="fw-normal" href="#!">Deberes y derechos del paciente</a></li>
+                        <li><a class="fw-normal" href="#!">Términos y condiciones</a></li>
+                        <li><a class="fw-normal" href="#!">Política de seguridad</a></li>
+                        <li><a class="fw-normal" href="#!">Trabaja con nosotros</a></li>
+                        <li><a class="fw-normal" href="#!">Sala de prensa</a></li>
+                        <li><a class="fw-normal" href="#!">Ubicaciones</a></li>
+                    </ul>
+
+                    <h4 class="text-lg mb-2 mt-4">Canales</h4>
+                    <ul class="footer-links">
+                        <li><a class="fw-normal" href="#!">Cuéntanos tu experiencia</a></li>
+                        <li><a class="fw-normal" href="#!">PBX: 600 9 600</a></li>
+                        <li><a class="fw-normal" href="#!">Portal para prestadores</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-lg mb-2">Matriz Guayaquil</h4>
+                    <div class="contact-info mb-4">
+                        <p>Av. Juan Tanca Marengo y Av. Agustín Freire Ycaza Esq. Edificio Veris</p>
+                        <p>Teléfono: 603 2 000</p>
+                    </div>
+
+                    <h4 class="text-lg mb-2">Oficinas Quito</h4>
+                    <div class="contact-info">
+                        <p class="mb-2">Quito (edificio Seguros Equinoccial) ubicado en la av. Eloy Alfaro N33 - 400 y
+                            Fernando
+                            Ayarza</p>
+                        <p class="mb-0">(02) 2220 298</p>
+                        <p class="mb-0">(02) 2220 380</p>
+                    </div>
+                </div>
+
+                <!-- App Section -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-4">Encuentra citas, tratamientos, recetas y tus resultados</h5>
+                    <h2 class="highlight-text mb-4">en un solo lugar.</h2>
+                    <div
+                        class="store-buttons d-flex justify-content-center justify-content-lg-between justify-content-xxl-center gap-2">
+                        <a class="btn-market btn-apple" href="#!" role="button">
+                            <span class="btn-market-subtitle">Descargalo en el</span><span class="btn-market-title">App
+                                Store</span>
+                        </a>
+                        <a class="btn-market btn-google" href="#!" role="button">
+                            <span class="btn-market-subtitle">Disponible en</span><span class="btn-market-title">Google
+                                Play</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Phone img -->
+                <div class="col-md-6 col-lg-3 app-section d-flex flex-shrink-0 justify-content-center">
+                    <img src="/assets/img/phone_veris-1.png" alt="App Preview" class="app-preview">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/theme-veris.js"></script>
+</body>
+
+</html>

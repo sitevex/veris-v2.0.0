@@ -360,7 +360,14 @@ body {
   background: rgba(41, 107, 239, 0.4);
   z-index: 1;
 }
-
+.bg-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(4deg, rgba(19, 36, 63, 0.80) 16.75%, rgba(102, 102, 102, 0.00) 83.63%);
+}
 .border-blue {
   border: 1px solid var(--Royal-Blue-100, #296bef);
 }
@@ -709,19 +716,15 @@ body {
 .text-blue-primary {
   color: var(--vris-blue-primary);
 }
-
 .text-dark-blue {
   color: var(--vris-dark-blue);
 }
-
 .text-orange-primary {
   color: var(--vris-orange-primary-600);
 }
-
 .text-gray-blue {
   color: var(--vris-gray-blue);
 }
-
 .text-pattens-blue {
   color: var(--vris-pattens-blue);
 }
@@ -740,7 +743,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.text-bg-pale-blue{
+  background: var(--vris-pale-blue);
+  color: var(--vris-deep-blue);
+}
 /* Tamaños generales */
 .text-xs {
   font-size: 0.75rem !important;
@@ -937,14 +943,13 @@ body {
 }
 
 .zoom-img img {
-  transition: transform 0.4s ease, filter 0.4s ease;
+  transition: transform 0.4s ease;
   display: block;
   width: 100%;
 }
 
 .zoom-img:hover img {
   transform: scale(1.1);
-  filter: brightness(1.1);
 }
 
 /* Tamaños para pantallas medianas (md) */
