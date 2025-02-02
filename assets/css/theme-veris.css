@@ -15,19 +15,21 @@
 :root {
   --vris-orange-primary-600: #d84315;
   --vris-orange-primary-700: #ba3214;
+  --vris-red: #cc0b39;
   --vris-blue-primary: #296bef;
   --vris-white: #ffffff;
   --vris-dark-blue: #13243f;
   --vris-gray-blue: #425065;
+  --vris-fiord: #3A5068;
   --vris-deep-blue: #19408f;
   --vris-bright-blue: #0071ce;
   --vris-bright-blue-1: #38a5f7;
   --vris-flower-Blue: #5489f2;
-  --vris-perano: #A9C4F9;
-  --vris-hawkes-blue: #D4E1FC;
-  --vris-pattens-blue: #CCEAFA;
+  --vris-perano: #a9c4f9;
+  --vris-hawkes-blue: #d4e1fc;
+  --vris-pattens-blue: #cceafa;
   --vris-light-gray: #d0d3d9;
-  --vris-red: #cc0b39;
+  --vris-solitude: #ebf6fe;
   --vris-pale-blue: #eaf0fd;
   --vris-very-blue: #eaf1ff;
   --vris-darker-blue: #0f1d32;
@@ -322,14 +324,23 @@ body {
   background: var(--vris-flower-Blue);
 }
 
+.bg-solitude {
+  background: var(--vris-solitude);
+}
+
 .bg-blue-gradient {
   background: linear-gradient(94deg, #296bef 2.62%, #62b7fd 98.91%);
 }
 .bg-blue-gradient-2 {
   background: linear-gradient(84deg, #296bef 22.25%, #35a4ff 96.53%);
 }
-.bg-blue-gradient-3{
-  background: linear-gradient(93deg, #073085 13.22%, #2257C3 60.98%, #296BEF 97.47%);
+.bg-blue-gradient-3 {
+  background: linear-gradient(
+    93deg,
+    #073085 13.22%,
+    #2257c3 60.98%,
+    #296bef 97.47%
+  );
 }
 .bg-very-blue-gradient {
   background: linear-gradient(92deg, #eaf1ff 1.4%, #e3ecff 99.48%);
@@ -389,10 +400,10 @@ body {
   background-position: center center;
   background-size: cover;
 }
-.card-zoom{
+.card-zoom {
   transition: transform 0.4s ease-in-out;
 }
-.card-zoom:hover{
+.card-zoom:hover {
   transform: scale(1.05);
 }
 
@@ -440,6 +451,19 @@ body {
   background-image: url("/assets/img/circles-blue-right.png");
   background-position: right center;
 }
+.flex-wrap-inherit{
+  flex-wrap: inherit;
+}
+.filter-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem 0;
+  flex-wrap: inherit;
+}
+.filter-scroll::-webkit-scrollbar {
+  display: none;
+}
 
 .font-gotham {
   font-family: var(--font-gotham);
@@ -466,7 +490,10 @@ body {
   width: 44px;
   height: 44px;
 }
-.mt-1s5{
+.m-height-200 {
+  max-height: 200px;
+}
+.mt-1s5 {
   margin-top: 0.375rem;
 }
 .ms-n2 {
@@ -555,7 +582,7 @@ body {
 }
 
 .nav-arrow {
-  color: #3a5068;
+  color: var(--vris-fiord);
   padding: 0.5rem;
   transition: color 0.3s ease;
 }
@@ -616,7 +643,14 @@ body {
 .nav-locations .nav-link {
   color: var(--vris-gray-blue);
 }
-
+.nav-filter .nav-link {
+  background: var(--vris-solitude);
+  color: var(--vris-dark-blue);
+}
+.nav-filter .nav-link.active, .nav-filter .show > .nav-link{
+  background: var(--vris-blue-primary);
+  color: var(--vris-white);
+}
 .nav-underline .nav-link.active,
 .nav-underline .show > .nav-link {
   color: var(--vris-blue-primary);
@@ -642,6 +676,33 @@ body {
   color: var(--vris-blue-primary);
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page-link {
+  border: none;
+  border-radius: 4px;
+  color: var(--vris-fiord);
+  font-size: 0.875rem;
+  /* padding: 0.5rem 1rem; */
+}
+
+.page-link:hover {
+  background-color: #e9ecef;
+  color: var(--vris-blue-primary);
+}
+
+.page-item.active .page-link {
+  background-color: var(--vris-blue-primary);
+  color: white;
+}
+.page-link:focus{
+  box-shadow: none;
+}
 .text-blue-primary {
   color: var(--vris-blue-primary);
 }
@@ -658,16 +719,16 @@ body {
   color: var(--vris-gray-blue);
 }
 
-.text-pattens-blue{
+.text-pattens-blue {
   color: var(--vris-pattens-blue);
 }
 .text-deep-blue {
   color: var(--vris-deep-blue);
 }
-.text-perano{
+.text-perano {
   color: var(--vris-perano);
 }
-.text-hawkes-blue{
+.text-hawkes-blue {
   color: var(--vris-hawkes-blue);
 }
 .text-blue-primary-gradient {
@@ -690,16 +751,14 @@ body {
   font-size: 1.125rem !important;
 }
 
-.text-zoom{
+.text-zoom {
   transition: transform 0.3s ease-in-out;
 }
-.text-zoom:hover{
+.text-zoom:hover {
   transform: scale(1.1);
 }
 
-.m-height-200 {
-  max-height: 200px;
-}
+
 .search-box {
   position: relative;
   font-family: 0.8rem;
@@ -990,7 +1049,7 @@ body {
   .banner-img {
     aspect-ratio: 1 / 1;
   }
-  .card-map{
+  .card-map {
     min-height: 343px;
   }
 }

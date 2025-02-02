@@ -47,7 +47,7 @@
                                 <a class="nav-link menu-link text-orange-primary" href="#!"><i class="fa-solid fa-truck-medical me-1"></i>Veris Urgencias</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link menu-link" href="#!"><i class="bi bi-tag-fill me-1"></i>Promociones</a>
+                                <a class="nav-link menu-link" href="/pages/promociones.html"><i class="bi bi-tag-fill me-1"></i>Promociones</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i class="fa-solid fa-hand-holding-medical me-1"></i>Servicios</a>
@@ -112,7 +112,7 @@
         <!-- cards -->
         <section class="py-4">
             <div class="container">
-                <div class="row g-3 g-lg-5">
+                <div class="row g-4 g-lg-5 mb-5">
                     <div class="col-12 col-md-4">
                         <div class="card border-0 border-bottom h-100">
                             <img src="/assets/img/blog/img-1.png" class="card-img-top" alt="...">
@@ -186,31 +186,34 @@
                         </div>
                     </div>
                 </div>
-
-                <nav class="pagination-container d-flex justify-content-center my-5">
-                    <div class="custom-pagination d-flex align-items-center gap-2">
-                        <a href="#" class="nav-arrow" aria-label="Previous page">
-                            <span class="fa-solid fa-chevron-left"></span>
-                        </a>
-
-                        <div class="page-item d-flex align-items-center">
-                            <span class="page-link">1</span>
-                        </div>
-                        
-                        <div class="page-item d-flex align-items-center">
-                            <span class="page-link">de</span>
-                        </div>
-                        
-                        <div class="page-item d-flex align-items-center">
-                            <span class="page-link">2</span>
-                        </div>
-
-                        <a href="#" class="nav-arrow" aria-label="Next page">
-                            <span class="fa-solid fa-chevron-right"></span>
-                        </a>
-                    </div>
+                <!-- paginate -->
+                <nav class="pt-4" aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item d-none">
+                            <a class="page-link border-0" href="#" aria-label="First">
+                                <i class="bi bi-chevron-double-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link border-0" href="#" aria-label="Previous">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link border-0" href="#">1</a></li>
+                        <li class="page-item"><span class="page-link border-0">de</span></li>
+                        <li class="page-item"><a class="page-link border-0" href="#">2</a></li>
+                        <li class="page-item">
+                            <a class="page-link border-0" href="#" aria-label="Next">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="page-item d-none">
+                            <a class="page-link border-0" href="#" aria-label="Last">
+                                <i class="bi bi-chevron-double-right"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
-
             </div>
         </section>
         <!-- App veris -->
@@ -232,8 +235,8 @@
                         <h4 class="text-blue-primary fw-semibold mb-4">Tus citas, tratamientos, resultados y más, en un solo lugar</h4>
                         <div class="row flex-column g-0 gap-2">
                             <div class="col-6 col-md-3 col-lg-5 col-xl-4">
-                                <a href="#!" class="btn btn-lg btn-app py-3 bg-moke px-2 text-white d-flex align-items-center gap-2 w-100">
-                                    <img src="/assets/img/icono/apple.png" class="btn-icon-app me-1" alt="app veris">
+                                <a href="#!" class="btn btn-lg btn-app py-3 bg-moke px-3 text-white d-flex align-items-center gap-3 w-100">
+                                    <img src="/assets/img/icono/apple.png" class="btn-icon-app" alt="app veris">
                                     <div class="text-start">
                                         <p class="text-xs fw-normal lh-1 mb-0 w-100">Descargalo en el</p>
                                         <p class="h6 fw-semibold lh-1 mb-0 w-100">App Store</p>
@@ -241,8 +244,8 @@
                                 </a>
                             </div>
                             <div class="col-6 col-md-3 col-lg-5 col-xl-4">
-                                <a href="#!" class="btn btn-lg btn-app py-3 bg-moke px-2 text-white d-flex align-items-center gap-2 w-100">
-                                    <img src="/assets/img/icono/google-play.png" class="btn-icon-app me-1" alt="app veris">
+                                <a href="#!" class="btn btn-lg btn-app py-3 bg-moke px-3 text-white d-flex align-items-center gap-3 w-100">
+                                    <img src="/assets/img/icono/google-play.png" class="btn-icon-app" alt="app veris">
                                     <div class="text-start">
                                         <p class="text-xs fw-normal lh-1 mb-0 w-100">Disponible en</p>
                                         <p class="h6 fw-semibold lh-1 mb-0 w-100">Google Play</p>

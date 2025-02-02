@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header> 
+    <header>
         <nav class="navbar navbar-expand-lg px-1 px-md-4">
             <div class="container">
                 <!-- Logo -->
@@ -28,7 +28,8 @@
                     <img src="/assets/img/logos/veris.png" alt="Veris Logo" height="40">
                 </a>
                 <!-- Toggler for Mobile/Tablet -->
-                <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas">
                     <span class="bi bi-list navbar-toggler-bars" style="font-size: 1.85rem;"></span>
                 </button>
                 <!-- Offcanvas Menu for Mobile/Tablet -->
@@ -44,20 +45,24 @@
                         <ul class="navbar-nav ms-auto gap-lg-1 gap-xxl-3">
                             <!-- Repeatable Items -->
                             <li class="nav-item">
-                                <a class="nav-link menu-link text-orange-primary" href="#!"><i class="fa-solid fa-truck-medical me-1"></i>Veris Urgencias</a>
+                                <a class="nav-link menu-link text-orange-primary" href="#!"><i
+                                        class="fa-solid fa-truck-medical me-1"></i>Veris Urgencias</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link menu-link" href="/pages/promociones.html"><i class="bi bi-tag-fill me-1"></i>Promociones</a>
+                                <a class="nav-link menu-link" href="/pages/promociones.html"><i
+                                        class="bi bi-tag-fill me-1"></i>Promociones</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i class="fa-solid fa-hand-holding-medical me-1"></i>Servicios</a>
+                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i
+                                        class="fa-solid fa-hand-holding-medical me-1"></i>Servicios</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#!">Servicio 1</a></li>
                                     <li><a class="dropdown-item" href="#!">Servicio 2</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i class="fa-solid fa-stethoscope me-1"></i>Especialidades</a>
+                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i
+                                        class="fa-solid fa-stethoscope me-1"></i>Especialidades</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#!">Especialidad 1</a></li>
                                     <li><a class="dropdown-item" href="#!">Especialidad 2</a></li>
@@ -66,10 +71,12 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link menu-link" href="/pages/ubicaciones.html"><i class="fa-solid fa-location-dot me-1"></i>Ubicaciones</a>
+                                <a class="nav-link menu-link" href="/pages/ubicaciones.html"><i
+                                        class="fa-solid fa-location-dot me-1"></i>Ubicaciones</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i class="fa-solid fa-users me-1"></i> Nosotros</a>
+                                <a class="nav-link dropdown-toggle menu-link" href="#!" data-bs-toggle="dropdown"><i
+                                        class="fa-solid fa-users me-1"></i> Nosotros</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/pages/nosotros.html">¿Quiénes somos?</a></li>
                                     <li><a class="dropdown-item" href="#!">Ubicaciones</a></li>
@@ -78,11 +85,13 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link menu-link" href="#!"><i class="fa-solid fa-file-lines me-1"></i>Facturación</a>
+                                <a class="nav-link menu-link" href="#!"><i
+                                        class="fa-solid fa-file-lines me-1"></i>Facturación</a>
                             </li>
                         </ul>
                         <div class="d-flex align-items-center gap-3 ms-lg-3">
-                            <a href="#!" class="btn btn-sm btn-blue-veris px-3 py-2 mt-3 mt-lg-0 w-100">Iniciar sesión</a>
+                            <a href="#!" class="btn btn-sm btn-blue-veris px-3 py-2 mt-3 mt-lg-0 w-100">Iniciar
+                                sesión</a>
                         </div>
                     </div>
                 </div>
@@ -120,57 +129,168 @@
                 <div class="text-start border-5 border-blue-start mb-4">
                     <h2 class="text-blue-primary fw-bold ms-4">Paquetes promocionales</h2>
                 </div>
-                <!-- search -->
                 <div class="mb-4">
                     <div class="row g-3">
-                    <div class="col-12 col-md-6">
-                        <div class="search-box">
-                            <div class="position-relative">
-                                <input class="form-control search-input search" name="search" id="search" type="search" placeholder="Buscar promociones" aria-label="Search" />
-                                <span class="fas fa-search search-box-icon"></span>
+                        <!-- search -->
+                        <div class="col-12 col-md-6">
+                            <div class="search-box">
+                                <div class="position-relative">
+                                    <input class="form-control search-input search" name="search" id="search"
+                                        type="search" placeholder="Buscar promociones" aria-label="Search" />
+                                    <span class="fas fa-search search-box-icon"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- filters -->
+                        <div class="col-12">
+                            <ul class="nav nav-pills nav-filter filter-scroll gap-3" data-filter-nav="data-filter-nav">
+                                <li class="nav-item">
+                                    <button class="nav-link active">Todo</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link">Mujeres</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link">Hombres</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link">Niños</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link">Adolescentes</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link">Adultos mayores</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link">Veris virtual</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link">Promociones</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link">Odontológicos</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 mb-5">
+                    <!-- cards -->
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card h-100 border-0 box-shadow-3 rounded-4 p-3">
+                            <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
+                                <img src="/assets/img/veris.png" class="card-img-top" alt="Promoción">
+                            </a>
+                            <div class="card-body px-0">
+                                <h5 class="card-title">Semáforo plus - 2993</h5>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 p-0 d-none">
+                                <div class="d-flex align-items-center gap-2 mb-3">
+                                    <div class="original-price">
+                                        <p class="card-text text-blue-primary fs-5 fw-bold mb-0">$64.38</p>
+                                    </div>
+                                    <div class="discounted-price">
+                                        <p class="text-sm mb-0">Antes <del>$80.50</del> </p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-veris w-100 rounded-3 py-2">Ver detalle</a>
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card h-100 border-0 box-shadow-3 rounded-4 p-3">
+                            <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
+                                <img src="/assets/img/veris.png" class="card-img-top" alt="Promoción">
+                                <span class="badge badge-discount position-absolute top-0 end-0">-20%</span>
+                            </a>
+                            <div class="card-body px-0">
+                                <h5 class="card-title">Semáforo plus - 2993</h5>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 p-0 d-none">
+                                <div class="d-flex align-items-center gap-2 mb-3">
+                                    <div class="original-price">
+                                        <p class="card-text text-blue-primary fs-5 fw-bold mb-0">$64.38</p>
+                                    </div>
+                                    <div class="discounted-price">
+                                        <p class="text-sm mb-0">Antes <del>$80.50</del> </p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-veris w-100 rounded-3 py-2">Ver detalle</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    
-                </div>
+                <!-- paginate -->
+                <nav class="pt-4" aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link border-0" href="#" aria-label="First">
+                                <i class="bi bi-chevron-double-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link border-0" href="#" aria-label="Previous">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link border-0" href="#">1</a></li>
+                        <li class="page-item"><span class="page-link border-0">de</span></li>
+                        <li class="page-item"><a class="page-link border-0" href="#">4</a></li>
+                        <li class="page-item">
+                            <a class="page-link border-0" href="#" aria-label="Next">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link border-0" href="#" aria-label="Last">
+                                <i class="bi bi-chevron-double-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
             </div>
         </section>
 
         <!-- Servicios -->
         <section class="pb-4 mb-3">
             <div class="container">
-                <div class="row g-3 g-lg-4">
+                <div class="row g-4">
                     <div class="col-12">
-                        <div class="row g-3">
+                        <div class="row g-4">
                             <div class="col-6 col-md-3 order-1">
                                 <a href="#!" class="text-decoration-none">
-                                    <div class="card card-cover card-zoom h-100 border-0 overflow-hidden position-relative rounded-4" style="background-image: radial-gradient(243.92% 157.93% at 52.93% 2.42%, rgba(255, 255, 255, 0.00) 0%, rgba(84, 137, 242, 0.80) 52.98%, #5489F2 64.25%), url('/assets/img/cards/5.png'); height: 330px !important;">
+                                    <div class="card card-cover card-zoom h-100 border-0 overflow-hidden position-relative rounded-4"
+                                        style="background-image: radial-gradient(243.92% 157.93% at 52.93% 2.42%, rgba(255, 255, 255, 0.00) 0%, rgba(84, 137, 242, 0.80) 52.98%, #5489F2 64.25%), url('/assets/img/cards/5.png'); height: 330px !important;">
                                         <div class="d-flex align-items-end h-100 p-3 pb-4 text-white text-shadow-1">
-                                            <h3 class="pt-5 mt-5 mb-0 display-6 lh-1 fw-bold me-auto">Consulta + vitamina c</h3>
-                                            <i class="fa-solid fa-chevron-right fs-2"></i>
+                                            <h2 class="pt-5 mt-5 mb-0 lh-1 fw-bold me-auto">Consulta +
+                                                vitamina c</h2>
+                                            <i class="fa-solid fa-chevron-right fs-2 ms-3"></i>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 order-3 order-md-2">
                                 <a href="#!" class="text-decoration-none">
-                                    <div class="card card-cover card-zoom h-100 border-0 overflow-hidden position-relative rounded-4" style="background-image: linear-gradient(180deg, rgba(55, 165, 247, 0.00) 0%, rgba(55, 165, 247, 0.80) 54.04%, #5489F2 100%), url('/assets/img/cards/6.png'); height: 330px !important;">
+                                    <div class="card card-cover card-zoom h-100 border-0 overflow-hidden position-relative rounded-4"
+                                        style="background-image: linear-gradient(180deg, rgba(55, 165, 247, 0.00) 0%, rgba(55, 165, 247, 0.80) 54.04%, #5489F2 100%), url('/assets/img/cards/6.png'); height: 330px !important;">
                                         <div class="d-flex align-items-end h-100 p-3 pb-4 text-white text-shadow-1">
-                                            <h3 class="pt-5 mt-5 mb-0 display-6 lh-1 fw-bold me-auto">Cuidado de riesgo vascular</h3>
-                                            <i class="fa-solid fa-chevron-right fs-2"></i>
+                                            <h2 class="pt-5 mt-5 mb-0 lh-1 fw-bold me-auto">Cuidado de riesgo
+                                                vascular</h2>
+                                            <i class="fa-solid fa-chevron-right fs-2 ms-3"></i>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-6 col-md-3 order-2">
                                 <a href="#!" class="text-decoration-none">
-                                    <div class="card card-cover card-zoom h-100 border-0 overflow-hidden position-relative rounded-4" style="background-image: radial-gradient(243.92% 157.93% at 52.93% 2.42%, rgba(255, 255, 255, 0) 0%, rgba(84, 137, 242, .80) 52.98%, #5489F2 64.25%), url('/assets/img/cards/7.png'); height: 330px !important;">
+                                    <div class="card card-cover card-zoom h-100 border-0 overflow-hidden position-relative rounded-4"
+                                        style="background-image: radial-gradient(243.92% 157.93% at 52.93% 2.42%, rgba(255, 255, 255, 0) 0%, rgba(84, 137, 242, .80) 52.98%, #5489F2 64.25%), url('/assets/img/cards/7.png'); height: 330px !important;">
                                         <div class="d-flex align-items-end h-100 p-3 pb-4 text-white text-shadow-1">
-                                            <h3 class="pt-5 mt-5 mb-0 display-6 lh-1 fw-bold me-auto">Chequeo completo</h3>
-                                            <i class="fa-solid fa-chevron-right fs-2"></i>
+                                            <h2 class="pt-5 mt-5 mb-0 lh-1 fw-bold me-auto">Chequeo completo
+                                            </h2>
+                                            <i class="fa-solid fa-chevron-right fs-2 ms-3"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -181,7 +301,7 @@
                         <a href="#!">
                             <div class="card card-zoom h-100 border-0 rounded-4">
                                 <div class="card-body p-0">
-                                    <img src="/assets/img/banner/banner-sm-1.png" class="img-fluid w-100" alt=""/>
+                                    <img src="/assets/img/banner/banner-sm-1.png" class="img-fluid w-100" alt="" />
                                 </div>
                             </div>
                         </a>
@@ -190,7 +310,7 @@
                         <a href="#!">
                             <div class="card card-zoom h-100 border-0 rounded-4">
                                 <div class="card-body p-0">
-                                    <img src="/assets/img/banner/banner-sm-2.png" class="img-fluid w-100" alt=""/>
+                                    <img src="/assets/img/banner/banner-sm-2.png" class="img-fluid w-100" alt="" />
                                 </div>
                             </div>
                         </a>
@@ -199,6 +319,17 @@
             </div>
         </section>
 
+        <!-- Explora por categoria -->
+        <section class="bg-pale-blue py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="fw-bold me-auto">Explora por categoria</h5>
+                        <a class="btn text-blue-primary fw-medium" href="#!">Ver todas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Promociones destacadas -->
         <section class="bg-deep-blue py-5">
             <div class="container">
@@ -207,57 +338,73 @@
                         <h5 class="text-white fw-bold">Promociones destacadas</h5>
                     </div>
                     <div class="slider-promotions position-relative">
-                        <div class="swiper my-swiper pt-3 pb-5" data-slides-per-view="1" data-autoplay='{"delay": 2500,"disableOnInteraction": false}' data-has-navigation="true" data-breakpoints='{"360": { "slidesPerView": 1.2 },"640": { "slidesPerView": 2 },"1024": { "slidesPerView": 3 },"1280": { "slidesPerView": 4 }}'>
+                        <div class="swiper my-swiper pt-3 pb-5" data-slides-per-view="1"
+                            data-autoplay='{"delay": 2500,"disableOnInteraction": false}' data-has-navigation="true"
+                            data-breakpoints='{"360": { "slidesPerView": 1.2 },"640": { "slidesPerView": 2 },"1024": { "slidesPerView": 3 },"1280": { "slidesPerView": 4 }}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="card h-100 border-0 box-shadow-3 rounded-4 p-3">
                                         <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
-                                            <img src="/assets/img/cards/9.jpg" class="img-fluid rounded-3 m-height-200 object-fit-cover" alt="...">
+                                            <img src="/assets/img/cards/9.jpg"
+                                                class="img-fluid rounded-3 m-height-200 object-fit-cover" alt="...">
                                         </a>
                                         <div class="card-body pb-0">
-                                            <h5 class="card-title mb-0"><a href="#!" class="text-dark-blue text-decoration-none">Semáforo plus - 2993</a></h5>
+                                            <h5 class="card-title mb-0"><a href="#!"
+                                                    class="text-dark-blue text-decoration-none">Semáforo plus - 2993</a>
+                                            </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card h-100 border-0 box-shadow-3 rounded-4 p-3">
                                         <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
-                                            <img src="/assets/img/cards/3.png" class="img-fluid rounded-3 m-height-200 object-fit-cover" alt="...">
+                                            <img src="/assets/img/cards/3.png"
+                                                class="img-fluid rounded-3 m-height-200 object-fit-cover" alt="...">
                                         </a>
                                         <div class="card-body pb-0">
-                                            <h5 class="card-title mb-0"><a href="#!" class="text-dark-blue text-decoration-none">Control Acné</a></h5>
+                                            <h5 class="card-title mb-0"><a href="#!"
+                                                    class="text-dark-blue text-decoration-none">Control Acné</a></h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card h-100 border-0 box-shadow-3 rounded-4 p-3">
                                         <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
-                                            <img src="/assets/img/cards/2.png" class="img-fluid rounded-3 m-height-200 object-fit-cover" alt="...">
+                                            <img src="/assets/img/cards/2.png"
+                                                class="img-fluid rounded-3 m-height-200 object-fit-cover" alt="...">
                                         </a>
                                         <div class="card-body pb-0">
-                                            <h5 class="card-title mb-0"><a href="#!" class="text-dark-blue text-decoration-none">Consulta Nutrición</a></h5>
+                                            <h5 class="card-title mb-0"><a href="#!"
+                                                    class="text-dark-blue text-decoration-none">Consulta Nutrición</a>
+                                            </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card h-100 border-0 box-shadow-3 rounded-4 p-3">
                                         <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
-                                            <img src="/assets/img/cards/1.png" class="img-fluid rounded-3 m-height-200 object-fit-cover" alt="...">
+                                            <img src="/assets/img/cards/1.png"
+                                                class="img-fluid rounded-3 m-height-200 object-fit-cover" alt="...">
                                             <span class="badge badge-discount position-absolute top-0 end-0">-20%</span>
                                         </a>
                                         <div class="card-body pb-0">
-                                            <h5 class="card-title mb-0"><a href="#!" class="text-dark-blue text-decoration-none">Cardiología x2 (Presencial + VC)</a></h5>
+                                            <h5 class="card-title mb-0"><a href="#!"
+                                                    class="text-dark-blue text-decoration-none">Cardiología x2
+                                                    (Presencial + VC)</a></h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card h-100 border-0 box-shadow-3 rounded-4 p-3">
                                         <a href="#!" class="zoom-img position-relative rounded-3 overflow-hidden">
-                                            <img src="/assets/img/cards/2.png" class="img-fluid rounded-3 m-height-200 object-fit-cover" alt="...">
+                                            <img src="/assets/img/cards/2.png"
+                                                class="img-fluid rounded-3 m-height-200 object-fit-cover" alt="...">
                                             <span class="badge badge-discount position-absolute top-0 end-0">-20%</span>
                                         </a>
                                         <div class="card-body pb-0">
-                                            <h5 class="card-title mb-0"><a href="#!" class="text-dark-blue text-decoration-none">Consulta Nutrición</a></h5>
+                                            <h5 class="card-title mb-0"><a href="#!"
+                                                    class="text-dark-blue text-decoration-none">Consulta Nutrición</a>
+                                            </h5>
                                         </div>
                                     </div>
                                 </div>
@@ -292,8 +439,10 @@
                                         <div class="card border-0 box-shadow-2 rounded-4 h-100">
                                             <div class="card-body">
                                                 <div class="zoom-img rounded-2 h-100 position-relative">
-                                                    <img src="/assets/img/cards/4.jpg" class="img-fluid object-fit-cover h-100" alt="Promoción 1">
-                                                    <span class="badge badge-discount position-absolute top-0 end-0">-20%</span>
+                                                    <img src="/assets/img/cards/4.jpg"
+                                                        class="img-fluid object-fit-cover h-100" alt="Promoción 1">
+                                                    <span
+                                                        class="badge badge-discount position-absolute top-0 end-0">-20%</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -302,8 +451,10 @@
                                         <div class="card border-0 box-shadow-2 rounded-4 h-100">
                                             <div class="card-body">
                                                 <div class="zoom-img rounded-2 h-100 position-relative">
-                                                    <img src="/assets/img/cards/5.jpg" class="img-fluid object-fit-cover h-100" alt="Promoción 2">
-                                                    <span class="badge badge-discount position-absolute top-0 end-0">-20%</span>
+                                                    <img src="/assets/img/cards/5.jpg"
+                                                        class="img-fluid object-fit-cover h-100" alt="Promoción 2">
+                                                    <span
+                                                        class="badge badge-discount position-absolute top-0 end-0">-20%</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -315,7 +466,8 @@
                                 <div class="card border-0 box-shadow-2 rounded-4 h-100">
                                     <div class="card-body">
                                         <div class="zoom-img rounded-2 h-100 position-relative">
-                                            <img src="/assets/img/cards/6.jpg" class="img-fluid object-fit-cover h-100" alt="Promoción Grande">
+                                            <img src="/assets/img/cards/6.jpg" class="img-fluid object-fit-cover h-100"
+                                                alt="Promoción Grande">
                                             <span class="badge badge-discount position-absolute top-0 end-0">-20%</span>
                                         </div>
                                     </div>
@@ -331,7 +483,8 @@
                                 <div class="card border-0 box-shadow-2 rounded-4 h-100">
                                     <div class="card-body">
                                         <div class="zoom-img rounded-2 h-100">
-                                            <img src="/assets/img/cards/5.jpg" class="img-fluid object-fit-cover h-100" alt="Promoción 4">
+                                            <img src="/assets/img/cards/5.jpg" class="img-fluid object-fit-cover h-100"
+                                                alt="Promoción 4">
                                         </div>
                                     </div>
                                 </div>
@@ -340,7 +493,8 @@
                                 <div class="card border-0 box-shadow-2 rounded-4 h-100">
                                     <div class="card-body">
                                         <div class="zoom-img rounded-2 h-100">
-                                            <img src="/assets/img/cards/7.jpg" class="img-fluid object-fit-cover h-100" alt="Promoción 5">
+                                            <img src="/assets/img/cards/7.jpg" class="img-fluid object-fit-cover h-100"
+                                                alt="Promoción 5">
                                         </div>
                                     </div>
                                 </div>
@@ -349,7 +503,8 @@
                                 <div class="card border-0 box-shadow-2 rounded-4 h-100">
                                     <div class="card-body">
                                         <div class="zoom-img rounded-2 h-100">
-                                            <img src="/assets/img/cards/8.jpg" class="img-fluid object-fit-cover h-100" alt="Promoción 6">
+                                            <img src="/assets/img/cards/8.jpg" class="img-fluid object-fit-cover h-100"
+                                                alt="Promoción 6">
                                         </div>
                                     </div>
                                 </div>
@@ -358,8 +513,11 @@
                                 <div class="card border-0 box-shadow-2 rounded-4 bg-blue-primary h-100">
                                     <div class="card-body text-white d-flex flex-column">
                                         <h5 class="card-title fw-bold">Ver todas</h5>
-                                        <p class="card-text text-sm">¡Aprovecha nuestras promociones y cuida de ti al mejor precio!</p>
-                                        <a href="#!" class="btn btn-white-veris rounded-circle w-fit-content ms-auto mt-auto"><i class="fa-solid fa-chevron-right"></i></a>
+                                        <p class="card-text text-sm">¡Aprovecha nuestras promociones y cuida de ti al
+                                            mejor precio!</p>
+                                        <a href="#!"
+                                            class="btn btn-white-veris rounded-circle w-fit-content ms-auto mt-auto"><i
+                                                class="fa-solid fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -376,7 +534,8 @@
                     <div class="col-12 col-md-7 mb-4">
                         <h1 class="text-white font-extrabold">Resultados de laboratorio</h1>
                         <h2 class="text-white font-extrabold mb-3 mb-lg-5">en línea, rápido y fácil</h2>
-                        <a href="#!" class="btn btn-lg btn-white-veris font-gotham fw-medium text-lg px-4 py-3">Ver resultados</a>
+                        <a href="#!" class="btn btn-lg btn-white-veris font-gotham fw-medium text-lg px-4 py-3">Ver
+                            resultados</a>
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="with-ellipse position-relative overflow-hidden">
@@ -444,7 +603,9 @@
                         <h5 class="text-white fw-bold">Conoce las aseguradoras que confían en nosotros</h5>
                     </div>
                     <div class="slider-insurers position-relative">
-                        <div class="swiper myInsurers pt-3 pb-5" data-slides-per-view="3" data-autoplay='{"delay": 2500,"disableOnInteraction": false}' data-has-navigation="false" data-breakpoints='{"640": { "slidesPerView": 6 },"1024": { "slidesPerView": 8 },"1280": { "slidesPerView": 9 }}'>
+                        <div class="swiper myInsurers pt-3 pb-5" data-slides-per-view="3"
+                            data-autoplay='{"delay": 2500,"disableOnInteraction": false}' data-has-navigation="false"
+                            data-breakpoints='{"640": { "slidesPerView": 6 },"1024": { "slidesPerView": 8 },"1280": { "slidesPerView": 9 }}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide d-flex align-items-center justify-content-center">
                                     <div class="card bg-transparent text-center border-0">
@@ -572,11 +733,13 @@
                             <h1 class="text-blue-primary font-extrabold display-6 mb-0">Descarga </h1>
                             <h1 class="text-blue-primary font-extrabold display-6 mb-4">El app Mi Veris</h1>
                         </div>
-                        <h4 class="text-blue-primary fw-semibold mb-4">Tus citas, tratamientos, resultados y más, en un solo lugar</h4>
+                        <h4 class="text-blue-primary fw-semibold mb-4">Tus citas, tratamientos, resultados y más, en un
+                            solo lugar</h4>
                         <div class="row flex-column g-0 gap-2">
                             <div class="col-6 col-md-3 col-lg-5 col-xl-4">
-                                <a href="#!" class="btn btn-lg btn-app py-3 bg-moke px-2 text-white d-flex align-items-center gap-2 w-100">
-                                    <img src="/assets/img/icono/apple.png" class="btn-icon-app me-1" alt="app veris">
+                                <a href="#!"
+                                    class="btn btn-lg btn-app py-3 bg-moke px-3 text-white d-flex align-items-center gap-3 w-100">
+                                    <img src="/assets/img/icono/apple.png" class="btn-icon-app" alt="app veris">
                                     <div class="text-start">
                                         <p class="text-xs fw-normal lh-1 mb-0 w-100">Descargalo en el</p>
                                         <p class="h6 fw-semibold lh-1 mb-0 w-100">App Store</p>
@@ -584,8 +747,10 @@
                                 </a>
                             </div>
                             <div class="col-6 col-md-3 col-lg-5 col-xl-4">
-                                <a href="#!" class="btn btn-lg btn-app py-3 bg-moke px-2 text-white d-flex align-items-center gap-2 w-100">
-                                    <img src="/assets/img/icono/google-play.png" class="btn-icon-app me-1" alt="app veris">
+                                <a href="#!"
+                                    class="btn btn-lg btn-app py-3 bg-moke px-3 text-white d-flex align-items-center gap-3 w-100">
+                                    <img src="/assets/img/icono/google-play.png" class="btn-icon-app"
+                                        alt="app veris">
                                     <div class="text-start">
                                         <p class="text-xs fw-normal lh-1 mb-0 w-100">Disponible en</p>
                                         <p class="h6 fw-semibold lh-1 mb-0 w-100">Google Play</p>
@@ -658,7 +823,8 @@
                 <div class="col-md-6 col-lg-3">
                     <h5 class="mb-4">Encuentra citas, tratamientos, recetas y tus resultados</h5>
                     <h2 class="highlight-text mb-4">en un solo lugar.</h2>
-                    <div class="store-buttons d-flex justify-content-center justify-content-lg-between justify-content-xxl-center gap-2">
+                    <div
+                        class="store-buttons d-flex justify-content-center justify-content-lg-between justify-content-xxl-center gap-2">
                         <a class="btn-market btn-apple" href="#!" role="button">
                             <span class="btn-market-subtitle">Descargalo en el</span><span class="btn-market-title">App
                                 Store</span>
