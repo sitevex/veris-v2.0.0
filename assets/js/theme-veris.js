@@ -60,11 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
         new Swiper(slider, config);
     });
 
-    window.addEventListener("scroll", function () {
+    /* window.addEventListener("scroll", function () {
       if (window.scrollY > scrollThreshold) {
         navbar.classList.add("scrolled"); // Agrega la clase cuando el scroll supera el umbral
       } else {
         navbar.classList.remove("scrolled"); // Elimina la clase cuando el scroll regresa arriba
       }
-    });
+    }); */
 });
